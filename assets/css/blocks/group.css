@@ -1,0 +1,12 @@
+/*-------------------------------------------------------
+Group
+-------------------------------------------------------*/
+
+/*
+Group block with global padding
+*/
+
+.is-style-has-global-padding {
+	padding-left: var(--wp--style--root--padding-right) !important;
+	padding-right: var(--wp--style--root--padding-left) !important;
+}

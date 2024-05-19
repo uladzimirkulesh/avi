@@ -1,0 +1,41 @@
+/*-------------------------------------------------------
+Pagination
+-------------------------------------------------------*/
+
+.wp-block-query-pagination > .wp-block-query-pagination-next,
+.wp-block-query-pagination > .wp-block-query-pagination-numbers,
+.wp-block-query-pagination > .wp-block-query-pagination-previous {
+	margin: 0;
+}
+
+.wp-block-query-pagination .page-numbers {
+	padding: 0 0.25em;
+}
+
+.wp-block-query-pagination .wp-block-query-pagination-previous ::after,
+.wp-block-query-pagination .wp-block-query-pagination-next ::after {
+	opacity: 1;
+}
+
+.wp-block-query-pagination .page-numbers.current {
+	color: var(--wp--preset--color--contrast);
+}
+
+/*
+Animation for pagination arrows
+*/
+
+.wp-block-query-pagination-next .wp-block-query-pagination-next-arrow,
+.wp-block-query-pagination-previous .wp-block-query-pagination-previous-arrow {
+	transition: transform 0.25s ease-in-out;
+}
+
+.wp-block-query-pagination-next:hover .wp-block-query-pagination-next-arrow,
+.wp-block-query-pagination-next:focus .wp-block-query-pagination-next-arrow {
+	transform: translateX(0.5rem);
+}
+
+.wp-block-query-pagination-previous:hover .wp-block-query-pagination-previous-arrow,
+.wp-block-query-pagination-previous:focus .wp-block-query-pagination-previous-arrow {
+	transform: translateX(-0.5rem);
+}

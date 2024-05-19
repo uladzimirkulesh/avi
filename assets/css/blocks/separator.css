@@ -1,0 +1,11 @@
+/*-------------------------------------------------------
+Separator
+-------------------------------------------------------*/
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull) {
+	width: 5rem;
+}
+
+.wp-block-separator.is-style-wide {
+	width: 100%;
+}

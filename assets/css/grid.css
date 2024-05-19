@@ -1,0 +1,177 @@
+/*-------------------------------------------------------
+Grid
+-------------------------------------------------------*/
+
+.grid {
+	--grid-column-count: 4;
+
+	display: grid;
+	grid-template-columns: repeat(var(--grid-column-count), minmax(0, 1fr));
+	grid-template-rows: auto;
+	gap: 0 var(--wp--style--block-gap);
+}
+
+@media only screen and (min-width: 600px) {
+	.grid {
+		--grid-column-count: 8;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid {
+		--grid-column-count: 12;
+	}
+}
+
+/*
+Grid inner elements
+*/
+
+.grid > * {
+	grid-row: auto;
+	width: 100%;
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.grid > * {
+		grid-column: 2 / 8;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid > * {
+		grid-column: 3 / 11;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.grid > * {
+		grid-column: 4 / 10;
+	}
+}
+
+/*
+Alignwide and alignfull inner elements
+*/
+
+.grid > .alignwide,
+.grid > .alignfull {
+	grid-column: 1 / -1;
+}
+
+/*
+Grid block
+*/
+
+.grid > .grid__block {
+	max-width: 100%;
+}
+
+/*-------------------------------------------------------
+Grid Item
+-------------------------------------------------------*/
+
+.grid__item {
+	margin-top: 0;
+}
+
+/*
+Grid item extra small (16.66667% - to use with medium item)
+*/
+
+.grid__item--x-small {
+	grid-column: span 2 / auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.grid__item--x-small {
+		grid-column: span 4 / auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid__item--x-small {
+		grid-column: span 2 / auto;
+	}
+}
+
+/*
+Grid item small (25%)
+*/
+
+.grid__item--small {
+	grid-column: span 2 / auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.grid__item--small {
+		grid-column: span 4 / auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid__item--small {
+		grid-column: span 3 / auto;
+	}
+}
+
+/*
+Grid item medium (33.33333%)
+*/
+
+.grid__item--medium {
+	grid-column: span 2 / auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.grid__item--medium {
+		grid-column: span 4 / auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid__item--medium {
+		grid-column: span 4 / auto;
+	}
+}
+
+/*
+Grid item large (50%)
+*/
+
+.grid__item--large {
+	grid-column: span 4 / auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.grid__item--large {
+		grid-column: span 8 / auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid__item--large {
+		grid-column: span 6 / auto;
+	}
+}
+
+/*
+Grid item extra large (100%)
+*/
+
+.grid__item--x-large {
+	grid-column: span 4 / auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.grid__item--x-large {
+		grid-column: span 8 / auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.grid__item--x-large {
+		grid-column: span 12 / auto;
+	}
+}

@@ -1,0 +1,70 @@
+/*-------------------------------------------------------
+Post comments form
+-------------------------------------------------------*/
+
+.wp-block-comments > * + .wp-block-post-comments-form {
+	margin-top: var(--wp--preset--spacing--60);
+}
+
+.comment + .wp-block-post-comments-form {
+	margin-bottom: var(--wp--preset--spacing--30);
+}
+
+.wp-block-post-comments-form .comment-reply-title {
+	margin-bottom: calc(var(--wp--preset--spacing--20) / 4);
+	font-size: var(--wp--preset--font-size--xxx-large);
+}
+
+.comment-form .comment-notes,
+.comment-form .logged-in-as {
+	color: var(--wp--preset--color--contrast-2);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.comment-form .logged-in-as a {
+	color: var(--wp--preset--color--contrast-2);
+}
+
+.comment-form .logged-in-as a:hover,
+.comment-form .logged-in-as a:focus,
+.comment-form .logged-in-as a:active {
+	color: var(--wp--preset--color--contrast);
+	text-decoration: underline;
+	text-decoration-color: var(--wp--preset--color--contrast) !important;
+}
+
+.comment-form .required {
+	color: var(--wp--preset--color--danger);
+}
+
+.wp-block-post-comments-form .comment-form-cookies-consent {
+	align-items: baseline;
+}
+
+.wp-block-post-comments-form .comment-form-cookies-consent #wp-comment-cookies-consent {
+	top: 0.1rem;
+	margin-top: 0;
+}
+
+.comment-respond .form-submit {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url {
+		width: 32%;
+		float: left;
+		margin-top: 0;
+	}
+
+	.comment-form-author,
+	.comment-form-email {
+		margin-right: 2%;
+	}
+
+	.wp-block-post-comments-form .comment-form-cookies-consent {
+		clear: both;
+	}
+}

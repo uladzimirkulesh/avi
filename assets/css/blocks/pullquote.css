@@ -1,0 +1,15 @@
+/*-------------------------------------------------------
+Pullquote
+-------------------------------------------------------*/
+
+.wp-block-pullquote > blockquote {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.wp-block-pullquote > blockquote {
+		margin-left: calc(var(--wp--style--block-gap) * 1.5);
+		margin-right: calc(var(--wp--style--block-gap) * 1.5);
+	}
+}

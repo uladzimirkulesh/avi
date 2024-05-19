@@ -1,0 +1,49 @@
+/*-------------------------------------------------------
+Button
+-------------------------------------------------------*/
+
+/*
+Button class "has icon"
+*/
+
+.wp-block-button.has-icon .wp-block-button__link {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wp-block-button.has-icon .button__icon {
+	margin-left: var(--wp--preset--spacing--40);
+	font-family: var(--wp--preset--font-family--heading);
+	font-size: var(--wp--preset--font-size--medium);
+}
+
+/*
+Style outline
+*/
+
+.wp-block-button .wp-block-button__link.is-style-outline:hover,
+.wp-block-button .wp-block-button__link.is-style-outline:focus,
+.wp-block-button .wp-block-button__link.is-style-outline:active,
+.wp-block-button.is-style-outline > .wp-block-button__link:hover,
+.wp-block-button.is-style-outline > .wp-block-button__link:focus,
+.wp-block-button.is-style-outline > .wp-block-button__link:active {
+	border: 1px solid var(--wp--preset--color--contrast);
+}
+
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color):hover,
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color):focus,
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color):active,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):focus,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):active {
+	color: var(--wp--preset--color--base);
+}
+
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background):hover,
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background):focus,
+.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background):active,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background):hover,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background):focus,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background):active {
+	background-color: var(--wp--preset--color--contrast);
+}

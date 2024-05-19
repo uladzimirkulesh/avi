@@ -1,0 +1,22 @@
+/*-------------------------------------------------------
+Comments pagination
+-------------------------------------------------------*/
+
+.wp-block-comments-pagination {
+	max-width: var(--wp--style--global--content-size) !important;
+}
+
+.wp-block-comments-pagination > .wp-block-comments-pagination-next,
+.wp-block-comments-pagination > .wp-block-comments-pagination-numbers,
+.wp-block-comments-pagination > .wp-block-comments-pagination-previous {
+	margin: 0;
+}
+
+.wp-block-comments-pagination-numbers > * {
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+}
+
+.wp-block-comments-pagination-numbers > :not(:last-child) {
+	margin-right: 0.25rem;
+}

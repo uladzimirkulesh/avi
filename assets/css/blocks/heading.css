@@ -1,0 +1,28 @@
+/*-------------------------------------------------------
+Headings
+-------------------------------------------------------*/
+
+/*
+Adding more space before headings
+*/
+
+body * + h1,
+body * + h2,
+body * + h3,
+body * + h4,
+body * + h5,
+body * + h6 {
+	margin-block-start: calc(var(--wp--style--block-gap) * 2);
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+	font-family: var(--wp--preset--font-family--heading-serif);
+	font-style: italic;
+	font-weight: 200;
+	letter-spacing: 0;
+}

@@ -1,0 +1,31 @@
+/*-------------------------------------------------------
+Comment content
+-------------------------------------------------------*/
+
+.comment-body .comment-content {
+	margin-top: calc(var(--wp--style--block-gap) / 1.5);
+}
+
+.comment-body .comment-content > * {
+	margin-top: var(--wp--style--block-gap);
+	margin-bottom: var(--wp--style--block-gap);
+}
+
+.comment-body .comment-content > :first-child {
+	margin-top: 0;
+}
+
+.comment-body .comment-content > :last-child {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.comment-body .comment-content,
+	.comment-body .comment-reply {
+		margin-left: 4rem !important;
+	}
+
+	.wp-block-comment-template ol {
+		padding-left: 4rem;
+	}
+}

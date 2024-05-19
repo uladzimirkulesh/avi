@@ -1,0 +1,13 @@
+/*-------------------------------------------------------
+Quote
+-------------------------------------------------------*/
+
+.wp-block-quote {
+	position: relative;
+}
+
+.wp-block-quote.is-large:where(:not(.is-style-plain)),
+.wp-block-quote.is-style-large:where(:not(.is-style-plain)) {
+	padding-left: calc(var(--wp--style--block-gap) * 1.75);
+	padding-right: 0;
+}

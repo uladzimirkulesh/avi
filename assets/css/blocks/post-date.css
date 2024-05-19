@@ -1,0 +1,36 @@
+/*-------------------------------------------------------
+Post date
+-------------------------------------------------------*/
+
+.wp-block-post-date {
+	position: relative;
+}
+
+.wp-block-post-date::before {
+	content: "";
+	width: 0.4375rem;
+	height: 0.4375rem;
+	display: inline-block;
+	margin-right: 0.5rem;
+	background-color: var(--wp--preset--color--contrast);
+	border-radius: 50%;
+	vertical-align: 6%;
+}
+
+.wp-block-post-date a {
+	display: inline-block;
+
+	background-image: linear-gradient(to right, var(--wp--preset--color--contrast) 0, var(--wp--preset--color--contrast) 100%);
+	background-size: 0 1px;
+	background-position: 100% 96%;
+	background-repeat: no-repeat;
+
+	transition: color 0.35s ease-in-out, background-size 0.35s ease-in-out;
+}
+
+.wp-block-post-date a:hover,
+.wp-block-post-date a:focus,
+.wp-block-post-date a:active {
+	background-size: 100% 1px;
+	background-position: 0 96%;
+}

@@ -1,0 +1,242 @@
+/*-------------------------------------------------------
+Patterns
+-------------------------------------------------------*/
+
+/*
+Section
+*/
+
+.section {
+	position: relative;
+}
+
+.section.alignfull {
+	background-position: center;
+}
+
+.section.alignfull > .section__header,
+.section.alignfull > .section__content,
+.section.alignfull > .section__footer {
+	position: relative;
+	padding-left: var(--wp--style--root--padding-left);
+	padding-right: var(--wp--style--root--padding-right);
+}
+
+/*
+Small title
+*/
+
+p > span.has-brackets::before,
+p > span.has-brackets::after {
+	font-size: var(--wp--preset--font-size--x-large);
+	vertical-align: bottom;
+	line-height: 1;
+	font-weight: 300;
+}
+
+p > span.has-brackets::before {
+	content: "{";
+	margin-right: 0.75rem;
+}
+
+p > span.has-brackets::after {
+	content: "}";
+	margin-left: 0.75rem;
+}
+
+/*-------------------------------------------------------
+Pattern "Landing page hero section"
+-------------------------------------------------------*/
+
+.section--landing-hero {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+
+/*
+Section background image
+*/
+
+.section--landing-hero .section__bg-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/*
+Section block
+*/
+
+.section--landing-hero .section__block {
+	z-index: 10;
+}
+
+@media only screen and (min-width: 600px) {
+	.section--landing-hero .section__block p {
+		grid-column: 5 / 9;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.section--landing-hero .section__block p {
+		grid-column: 6 / 9;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.section--landing-hero .section__block p {
+		grid-column: 9 / 13;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.section--landing-hero .section__block p {
+		grid-column: 10 / 13;
+	}
+}
+
+/*-------------------------------------------------------
+Pattern "About me section"
+-------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+	.section--about-me .section__content > .wp-block-image,
+	.section--about-me .section__content > .wp-block-buttons {
+		grid-column: 1 / 7;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.section--about-me .section__content > p {
+		grid-column: 1 / 9;
+	}
+
+	.section--about-me .section__content > .wp-block-image,
+	.section--about-me .section__content > .wp-block-buttons {
+		grid-column: 1 / 5;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.section--about-me .section__content > p {
+		grid-column: 5 / 13;
+	}
+
+	.section--about-me .section__content > .wp-block-image,
+	.section--about-me .section__content > .wp-block-buttons {
+		grid-column: 5 / 9;
+	}
+}
+
+/*-------------------------------------------------------
+Pattern "Contact me section"
+-------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+	.section--contact-me .section__content > .wp-block-buttons {
+		grid-column: 1 / 7;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.section--contact-me .section__content > p {
+		grid-column: 1 / 9;
+	}
+
+	.section--contact-me .section__content > .wp-block-buttons {
+		grid-column: 1 / 5;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.section--contact-me .section__content > p {
+		grid-column: 5 / 11;
+	}
+
+	.section--contact-me .section__content > .wp-block-buttons {
+		grid-column: 5 / 9;
+	}
+}
+
+/*-------------------------------------------------------
+Pattern "Project description layout"
+-------------------------------------------------------*/
+
+.project__description {
+	--wp--preset--spacing--50: clamp(1.5rem, 5.625vw + 0.375rem, 6rem);
+}
+
+/*-------------------------------------------------------
+Pattern "Project gallery layout"
+-------------------------------------------------------*/
+
+.project__gallery {
+	--wp--preset--spacing--50: clamp(1.5rem, 5.625vw + 0.375rem, 6rem);
+}
+
+/*-------------------------------------------------------
+Pattern "Page About Me"
+-------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+	.content--about-me > * {
+		grid-column: 3 / 9;
+	}
+
+	.content--about-me > .grid__block--bottom {
+		grid-column: 3 / 7;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.content--about-me > .grid__block--left {
+		grid-column: 5 / 9;
+	}
+
+	.content--about-me > .grid__block--right {
+		grid-column: 9 / 13;
+		margin-top: 0;
+	}
+
+	.content--about-me > .grid__block--bottom {
+		grid-column: 5 / 9;
+	}
+}
+
+/*-------------------------------------------------------
+Pattern "Page Contact Me"
+-------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+	.content--contact-me .grid__block {
+		grid-column: 3 / 9;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.content--contact-me .grid__block {
+		grid-column: 4 / 9;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.content--contact-me .grid__block {
+		grid-column: 7 / 13;
+	}
+}
+
+/*-------------------------------------------------------
+Pattern "Post Gallery"
+-------------------------------------------------------*/
+
+.entry__gallery {
+	--wp--preset--spacing--50: clamp(1.5rem, 5.625vw + 0.375rem, 6rem);
+}
+
+.entry__gallery .grid {
+	gap: var(--wp--style--block-gap);
+}

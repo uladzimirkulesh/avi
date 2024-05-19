@@ -1,0 +1,13 @@
+/*-------------------------------------------------------
+UK Portfolio
+-------------------------------------------------------*/
+
+.uk-portfolio__query .columns-2 {
+	gap: calc(var(--wp--style--block-gap) * 2) var(--wp--style--block-gap);
+}
+
+@media only screen and (max-width: 767px) {
+	.uk-portfolio__query .columns-2 {
+		grid-template-columns: 1fr;
+	}
+}
