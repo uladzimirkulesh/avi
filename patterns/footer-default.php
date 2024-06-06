@@ -7,18 +7,19 @@
  */
 ?>
 
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"elements":{"link":{":hover":{"color":{"text":"var:preset|color|contrast"}},"color":{"text":"var:preset|color|contrast-2"}}}},"textColor":"contrast-2","className":"footer__container","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"fontSize":"small"} -->
-	<div class="wp-block-group alignwide footer__container has-contrast-2-color has-text-color has-link-color has-small-font-size" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
-		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( '© 2023 all rights reserved', 'Copyright text', 'avi' ); ?></p>
+<!-- wp:group {"metadata":{"name":"Footer container"},"className":"footer-container is-style-has-global-padding","layout":{"type":"default"}} -->
+<div class="wp-block-group footer-container is-style-has-global-padding">
+	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|contrast-4","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"fontSize":"small"} -->
+	<div class="wp-block-group has-small-font-size" style="border-top-color:var(--wp--preset--color--contrast-4);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+		<!-- wp:paragraph {"metadata":{"name":"Copyright"},"className":"footer-copyright"} -->
+		<p class="footer-copyright"><?php echo esc_html_x( '© 2023 all rights reserved', 'Copyright text', 'avi' ); ?></p>
 		<!-- /wp:paragraph -->
+
+		<!-- wp:navigation {"overlayMenu":"never","className":"footer-navigation","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} /-->
 
 		<?php
 		if ( function_exists( 'the_privacy_policy_link' ) ) {
-			the_privacy_policy_link( '<!-- wp:paragraph {"style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|contrast"}}}}}} -->
-			<p>', '</p><!-- /wp:paragraph -->' );
+			the_privacy_policy_link( '<!-- wp:paragraph {"metadata":{"name":"Privacy"},"style":{"elements":{"link":{":hover":{"color":{"text":"var:preset|color|contrast"}},"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast","className":"footer-privacy"} --><p class="footer-privacy has-contrast-color has-text-color has-link-color">', '</p><!-- /wp:paragraph -->' );
 		}
 		?>
 	</div>

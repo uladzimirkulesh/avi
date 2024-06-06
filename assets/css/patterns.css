@@ -2,241 +2,461 @@
 Patterns
 -------------------------------------------------------*/
 
-/*
-Section
-*/
-
-.section {
-	position: relative;
-}
-
-.section.alignfull {
-	background-position: center;
-}
-
-.section.alignfull > .section__header,
-.section.alignfull > .section__content,
-.section.alignfull > .section__footer {
-	position: relative;
-	padding-left: var(--wp--style--root--padding-left);
-	padding-right: var(--wp--style--root--padding-right);
-}
-
-/*
-Small title
-*/
-
-p > span.has-brackets::before,
-p > span.has-brackets::after {
-	font-size: var(--wp--preset--font-size--x-large);
-	vertical-align: bottom;
-	line-height: 1;
-	font-weight: 300;
-}
-
-p > span.has-brackets::before {
-	content: "{";
-	margin-right: 0.75rem;
-}
-
-p > span.has-brackets::after {
-	content: "}";
-	margin-left: 0.75rem;
-}
-
 /*-------------------------------------------------------
-Pattern "Landing page hero section"
+ Section "Hero"
 -------------------------------------------------------*/
 
-.section--landing-hero {
-	position: relative;
-	overflow: hidden;
+.section--hero:not([style^="min-height"]) {
 	min-height: 100vh;
 	min-height: 100svh;
 }
 
-/*
-Section background image
-*/
-
-.section--landing-hero .section__bg-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+.section--hero .section__content .grid {
+	gap: var(--wp--style--block-gap);
 }
 
 /*
-Section block
+Title
 */
 
-.section--landing-hero .section__block {
-	z-index: 10;
-}
-
-@media only screen and (min-width: 600px) {
-	.section--landing-hero .section__block p {
-		grid-column: 5 / 9;
-	}
+.section--hero .hero-title {
+	grid-column: 1 / -1;
+	margin-left: -0.04em;
 }
 
 @media only screen and (min-width: 768px) {
-	.section--landing-hero .section__block p {
+	.section--hero .hero-title {
+		grid-row: 2 / 3;
+		margin-top: var(--wp--preset--spacing--20);
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.section--hero .hero-title {
+		grid-column: 1 / 10;
+		grid-row: 1 / 2;
+		margin-top: var(--wp--preset--spacing--40);
+	}
+}
+
+/*
+Subtitle
+*/
+
+.section--hero .hero-subtitle {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.section--hero .hero-subtitle {
 		grid-column: 6 / 9;
+		grid-row: 1 / 2;
+		justify-content: flex-end;
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.section--landing-hero .section__block p {
+	.section--hero .hero-subtitle {
 		grid-column: 9 / 13;
 	}
 }
 
-@media only screen and (min-width: 1200px) {
-	.section--landing-hero .section__block p {
+@media only screen and (min-width: 1280px) {
+	.section--hero .hero-subtitle {
 		grid-column: 10 / 13;
 	}
 }
 
+.section--hero .hero-subtitle > * {
+	max-width: 17rem;
+}
+
 /*-------------------------------------------------------
-Pattern "About me section"
+Section "About"
 -------------------------------------------------------*/
 
-@media only screen and (min-width: 600px) {
-	.section--about-me .section__content > .wp-block-image,
-	.section--about-me .section__content > .wp-block-buttons {
-		grid-column: 1 / 7;
-	}
+.section--about .section__content > * {
+	grid-column: 1 / -1;
 }
 
 @media only screen and (min-width: 768px) {
-	.section--about-me .section__content > p {
-		grid-column: 1 / 9;
-	}
-
-	.section--about-me .section__content > .wp-block-image,
-	.section--about-me .section__content > .wp-block-buttons {
-		grid-column: 1 / 5;
+	.section--about .section__content > * {
+		grid-column: 3 / 9;
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.section--about-me .section__content > p {
+	.section--about .section__content > * {
 		grid-column: 5 / 13;
 	}
+}
 
-	.section--about-me .section__content > .wp-block-image,
-	.section--about-me .section__content > .wp-block-buttons {
-		grid-column: 5 / 9;
+.section--about .section__content > p:not([class*="-font-size"]) {
+	font-size: clamp(1.3125rem, 0.70313vi + 1.17188rem, 1.875rem) !important;
+	line-height: 1.33333;
+}
+
+/*-------------------------------------------------------
+Section "Services"
+-------------------------------------------------------*/
+
+.section--services .section__content {
+	gap: var(--wp--preset--spacing--40) var(--wp--preset--spacing--30);
+}
+
+/*
+Services item
+*/
+
+.services__item {
+	max-width: 20.5rem;
+	grid-column: span 4 / auto;
+}
+
+/*-------------------------------------------------------
+Section "Process"
+-------------------------------------------------------*/
+
+.section--process .section__content {
+	gap: var(--wp--preset--spacing--40) var(--wp--preset--spacing--30);
+}
+
+/*
+Process item
+*/
+
+.process__item {
+	max-width: 28rem;
+	grid-column: span 4 / auto;
+}
+
+/*-------------------------------------------------------
+Section "Latest Articles"
+-------------------------------------------------------*/
+
+.section--latest-articles .section__content > * {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.section--latest-articles .section__content > * {
+		grid-column: 3 / 9;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.section--latest-articles .section__content > * {
+		grid-column: 5 / 13;
+	}
+}
+
+.section--latest-articles .section__content .wp-block-query {
+	border-top: 1px solid var(--wp--preset--color--contrast-4);
+}
+
+/*
+Post date
+*/
+
+@media only screen and (min-width: 782px) {
+	.section--latest-articles .wp-block-post-date {
+		text-align: right;
 	}
 }
 
 /*-------------------------------------------------------
-Pattern "Contact me section"
+Section "Contact"
 -------------------------------------------------------*/
 
+.section--contact .section__content > * {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.section--contact .section__content > * {
+		grid-column: 3 / 9;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.section--contact .section__content > * {
+		grid-column: 5 / 11;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.section--contact .section__content > * {
+		grid-column: 5 / 10;
+	}
+}
+
+/*-------------------------------------------------------
+Pattern "Page Contact"
+-------------------------------------------------------*/
+
+.page-contact {
+	gap: var(--wp--preset--spacing--60) var(--wp--style--block-gap);
+}
+
+/*
+Contact info
+*/
+
+.page-contact .contact-info {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 960px) {
+	.page-contact .contact-info {
+		grid-column: 1 / 9;
+	}
+}
+
+/*
+Contact block
+*/
+
+.page-contact .contact-block {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: var(--wp--preset--spacing--40) var(--wp--style--block-gap);
+}
+
 @media only screen and (min-width: 600px) {
-	.section--contact-me .section__content > .wp-block-buttons {
+	.page-contact .contact-block {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.page-contact .contact-block {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.page-contact .contact-block > * {
+	grid-column: span 1 / auto;
+}
+
+/*
+Contact image
+*/
+
+.page-contact .contact-image {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 960px) {
+	.page-contact .contact-image {
+		grid-column: 9 / 13;
+	}
+}
+
+/*-------------------------------------------------------
+Section "About Me"
+-------------------------------------------------------*/
+
+/*
+Section header
+*/
+
+.section--about-me .section__header .wp-block-heading {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 1280px) {
+	.section--about-me .section__header .wp-block-heading {
+		grid-column: 1 / 10;
+	}
+}
+
+/*
+Section content
+*/
+
+.section--about-me .section__content p {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 600px) {
+	.section--about-me .section__content p {
 		grid-column: 1 / 7;
 	}
 }
 
 @media only screen and (min-width: 768px) {
-	.section--contact-me .section__content > p {
-		grid-column: 1 / 9;
-	}
-
-	.section--contact-me .section__content > .wp-block-buttons {
-		grid-column: 1 / 5;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.section--contact-me .section__content > p {
-		grid-column: 5 / 11;
-	}
-
-	.section--contact-me .section__content > .wp-block-buttons {
+	.section--about-me .section__content p {
 		grid-column: 5 / 9;
 	}
 }
 
-/*-------------------------------------------------------
-Pattern "Project description layout"
--------------------------------------------------------*/
-
-.project__description {
-	--wp--preset--spacing--50: clamp(1.5rem, 5.625vw + 0.375rem, 6rem);
-}
-
-/*-------------------------------------------------------
-Pattern "Project gallery layout"
--------------------------------------------------------*/
-
-.project__gallery {
-	--wp--preset--spacing--50: clamp(1.5rem, 5.625vw + 0.375rem, 6rem);
-}
-
-/*-------------------------------------------------------
-Pattern "Page About Me"
--------------------------------------------------------*/
-
-@media only screen and (min-width: 600px) {
-	.content--about-me > * {
-		grid-column: 3 / 9;
-	}
-
-	.content--about-me > .grid__block--bottom {
-		grid-column: 3 / 7;
-	}
-}
-
 @media only screen and (min-width: 960px) {
-	.content--about-me > .grid__block--left {
-		grid-column: 5 / 9;
-	}
-
-	.content--about-me > .grid__block--right {
-		grid-column: 9 / 13;
-		margin-top: 0;
-	}
-
-	.content--about-me > .grid__block--bottom {
-		grid-column: 5 / 9;
-	}
-}
-
-/*-------------------------------------------------------
-Pattern "Page Contact Me"
--------------------------------------------------------*/
-
-@media only screen and (min-width: 600px) {
-	.content--contact-me .grid__block {
-		grid-column: 3 / 9;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.content--contact-me .grid__block {
-		grid-column: 4 / 9;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.content--contact-me .grid__block {
+	.section--about-me .section__content p {
 		grid-column: 7 / 13;
 	}
 }
 
-/*-------------------------------------------------------
-Pattern "Post Gallery"
--------------------------------------------------------*/
-
-.entry__gallery {
-	--wp--preset--spacing--50: clamp(1.5rem, 5.625vw + 0.375rem, 6rem);
+@media only screen and (min-width: 1280px) {
+	.section--about-me .section__content p {
+		grid-column: 9 / 13;
+	}
 }
 
-.entry__gallery .grid {
+/*-------------------------------------------------------
+Section "Awards"
+-------------------------------------------------------*/
+
+/*
+Awards list
+*/
+
+.section--awards .awards-list {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 960px) {
+	.section--awards .awards-list {
+		grid-column: 5 / 13;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.section--awards .awards-list:not([class*="-font-size"]) {
+		font-size: var(--wp--preset--font-size--medium);
+	}
+}
+
+/*
+Awards list item
+*/
+
+@media only screen and (max-width: 479px) {
+	.section--awards .awards-list__item {
+		flex-direction: column;
+		gap: 0.25rem;
+		align-items: flex-start;
+	}
+
+	.section--awards .awards-list__item--head {
+		display: none;
+	}
+}
+
+.section--awards .awards-list__item > * {
+	flex: 1 0 0px;
+}
+
+.section--awards .awards-list__item > :nth-child(1) {
+	flex: 1.7 0 0px;
+}
+
+.section--awards .awards-list__item a {
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------
+Section "Clients"
+-------------------------------------------------------*/
+
+/*
+Clients list
+*/
+
+.clients-list {
 	gap: var(--wp--style--block-gap);
+}
+
+/*
+Client
+*/
+
+.clients-list__client {
+	grid-column: span 4 / auto;
+}
+
+@media only screen and (min-width: 480px) {
+	.clients-list__client {
+		grid-column: span 2 / auto;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.clients-list__client {
+		grid-column: span 4 / auto;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.clients-list__client {
+		min-height: 13rem !important;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.clients-list__client {
+		grid-column: span 3 / auto;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.clients-list__client {
+		min-height: 15rem !important;
+	}
+}
+
+/*
+Logo
+*/
+
+.clients-list__client > * {
+	max-width: 10rem;
+}
+
+/*-------------------------------------------------------
+Section "Experience"
+-------------------------------------------------------*/
+
+/*
+Experiences list
+*/
+
+.section--experience .experiences-list {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 960px) {
+	.section--experience .experiences-list {
+		grid-column: 5 / 13;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.section--experience .experiences-list:not([class*="-font-size"]) {
+		font-size: var(--wp--preset--font-size--medium);
+	}
+}
+
+/*
+Experiences list item
+*/
+
+@media only screen and (max-width: 479px) {
+	.section--experience .experiences-list__item {
+		flex-direction: column;
+		gap: 0.25rem;
+		align-items: flex-start;
+	}
+
+	.section--experience .experiences-list__item--head {
+		display: none;
+	}
+}
+
+.section--experience .experiences-list__item > * {
+	flex: 1 0 0px;
+}
+
+.section--experience .experiences-list__item > :nth-child(1) {
+	flex: 1.7 0 0px;
 }

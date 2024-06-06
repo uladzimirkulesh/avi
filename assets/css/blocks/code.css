@@ -1,0 +1,29 @@
+/*-------------------------------------------------------
+Code
+-------------------------------------------------------*/
+
+/*
+Add additional margin to the code block within post content.
+*/
+
+.wp-block-post-content p + .wp-block-code:not([style*="margin-top"]) {
+	margin-top: calc(var(--wp--style--block-gap) * 1.5);
+}
+
+.wp-block-post-content :where(p, .wp-block-heading) + .wp-block-code:not([style*="margin-bottom"]) {
+	margin-bottom: calc(var(--wp--style--block-gap) * 1.5);
+}
+
+/*
+Alignwide and alignfull code block.
+*/
+
+.wp-block-post-content p + .wp-block-code.alignwide:not([style*="margin-top"]),
+.wp-block-post-content p + .wp-block-code.alignfull:not([style*="margin-top"]) {
+	margin-top: calc(var(--wp--style--block-gap) * 2);
+}
+
+.wp-block-post-content :where(p, .wp-block-heading) + .wp-block-code.alignwide:not([style*="margin-bottom"]),
+.wp-block-post-content :where(p, .wp-block-heading) + .wp-block-code.alignfull:not([style*="margin-bottom"]) {
+	margin-bottom: calc(var(--wp--style--block-gap) * 2);
+}

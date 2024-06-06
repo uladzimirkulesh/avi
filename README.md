@@ -32,8 +32,9 @@ Avi is an easy-to-use WordPress theme inspired by simplicity. With block pattern
 * 2X Large:		28-30px		- H3
 * 3X Large:		32-36px		- H2
 * 4X Large:		36-48px		- H1
-* 5X Large:		42-96px		- Post Headings
-* 6X Large:		60-256px	   - Huge Headings
+* 5X Large:		42-72px		- Large Headings
+* 6X Large:		42-96px		- Post Headings
+* 7X Large:		60-256px	   - Huge Headings
 
 ## Terminal
 

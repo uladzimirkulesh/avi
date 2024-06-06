@@ -26,7 +26,8 @@ if ( ! function_exists( 'avi_support' ) ) :
 			'assets/css/color-themes.css',
 			'assets/css/patterns.css',
 			'assets/css/animations.css',
-			'assets/css/uk-portfolio.css'
+			'assets/css/uk-portfolio.css',
+			'assets/css/contact-form.css'
 		) );
 
 	}
@@ -103,8 +104,16 @@ if ( ! function_exists( 'avi_scripts' ) ) :
 			$version_string
 		);
 
+		wp_register_style(
+			'avi-contact-form',
+			get_template_directory_uri() . '/assets/css/contact-form.css',
+			array( 'avi-style' ),
+			$version_string
+		);
+
 		// Enqueue plugins stylesheets.
 		wp_enqueue_style( 'uk-portfolio' );
+		wp_enqueue_style( 'avi-contact-form' );
 
 		// Register global scripts.
 		wp_register_script(
@@ -288,6 +297,16 @@ if ( ! function_exists( 'avi_block_stylesheets' ) ) :
 		);
 
 		wp_enqueue_block_style(
+			'core/code',
+			array(
+				'handle' => 'avi-code',
+				'src'    => get_parent_theme_file_uri( 'assets/css/blocks/code.css' ),
+				'ver'    => $version_string,
+				'path'   => get_parent_theme_file_path( 'assets/css/blocks/code.css' ),
+			)
+		);
+
+		wp_enqueue_block_style(
 			'core/comment-content',
 			array(
 				'handle' => 'avi-comment-content',
@@ -308,6 +327,16 @@ if ( ! function_exists( 'avi_block_stylesheets' ) ) :
 		);
 
 		wp_enqueue_block_style(
+			'core/gallery',
+			array(
+				'handle' => 'avi-gallery',
+				'src'    => get_parent_theme_file_uri( 'assets/css/blocks/gallery.css' ),
+				'ver'    => $version_string,
+				'path'   => get_parent_theme_file_path( 'assets/css/blocks/gallery.css' ),
+			)
+		);
+
+		wp_enqueue_block_style(
 			'core/group',
 			array(
 				'handle' => 'avi-group',
@@ -324,6 +353,16 @@ if ( ! function_exists( 'avi_block_stylesheets' ) ) :
 				'src'    => get_parent_theme_file_uri( 'assets/css/blocks/heading.css' ),
 				'ver'    => $version_string,
 				'path'   => get_parent_theme_file_path( 'assets/css/blocks/heading.css' ),
+			)
+		);
+
+		wp_enqueue_block_style(
+			'core/image',
+			array(
+				'handle' => 'avi-image',
+				'src'    => get_parent_theme_file_uri( 'assets/css/blocks/image.css' ),
+				'ver'    => $version_string,
+				'path'   => get_parent_theme_file_path( 'assets/css/blocks/image.css' ),
 			)
 		);
 
@@ -434,6 +473,16 @@ if ( ! function_exists( 'avi_block_stylesheets' ) ) :
 				'src'    => get_parent_theme_file_uri( 'assets/css/blocks/separator.css' ),
 				'ver'    => $version_string,
 				'path'   => get_parent_theme_file_path( 'assets/css/blocks/separator.css' ),
+			)
+		);
+
+		wp_enqueue_block_style(
+			'core/table',
+			array(
+				'handle' => 'avi-table',
+				'src'    => get_parent_theme_file_uri( 'assets/css/blocks/table.css' ),
+				'ver'    => $version_string,
+				'path'   => get_parent_theme_file_path( 'assets/css/blocks/table.css' ),
 			)
 		);
 

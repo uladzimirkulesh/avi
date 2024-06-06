@@ -9,8 +9,8 @@
 
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"0"}}},"className":"content","layout":{"type":"constrained"}} -->
-<main class="wp-block-group content" style="padding-top:0;">
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"style":{"spacing":{"padding":{"top":"0"}}},"className":"content","layout":{"type":"constrained"}} -->
+<main id="content" class="wp-block-group content" style="padding-top:0;">
 	<!-- wp:pattern {"slug":"avi/page-home-personal"} /-->
 </main>
 <!-- /wp:group -->

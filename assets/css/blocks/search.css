@@ -3,20 +3,8 @@ Search
 -------------------------------------------------------*/
 
 .wp-block-search .wp-block-search__button {
-	margin-left: 10px !important;
+	margin-left: 0.75rem !important;
 	border-radius: 0.25rem;
-
-	color: var(--wp--preset--color--contrast);
-	background-color: transparent;
-	border-color: var(--wp--preset--color--contrast-4);
-}
-
-.wp-block-search .wp-block-search__button:hover,
-.wp-block-search .wp-block-search__button:focus,
-.wp-block-search .wp-block-search__button:active {
-	color: var(--wp--preset--color--base);
-	background-color: var(--wp--preset--color--contrast);
-	border-color: var(--wp--preset--color--contrast);
 }
 
 .wp-block-search__inside-wrapper {
@@ -24,7 +12,8 @@ Search
 }
 
 :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) {
-	border: 1px solid var(--wp--preset--color--contrast-4);
+	background-color: var(--wp--preset--color--base-2);
+	border-color: var(--wp--preset--color--contrast-3);
 	border-radius: 0.25rem;
 }
 
@@ -33,6 +22,6 @@ Search
 	border-radius: 0 !important;
 }
 
-.wp-block-search__button-behavior-expand.wp-block-search__searchfield-hidden .wp-block-search__button {
+.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__button {
 	margin-left: 0 !important;
 }

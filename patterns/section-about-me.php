@@ -7,33 +7,37 @@
  */
 ?>
 
-<!-- wp:group {"tagName":"section","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|70"}}},"className":"section section--about-me","layout":{"type":"default"}} -->
-<section class="wp-block-group alignwide section section--about-me" id="section-about-me" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--70)">
-	<!-- wp:group {"align":"wide","className":"section__content grid","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide section__content grid">
-		<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}},"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"contrast","className":"has-heading-font","fontSize":"small"} -->
-		<p class="has-heading-font has-contrast-color has-text-color has-link-color has-small-font-size" style="font-style:normal;font-weight:500"><span class="has-brackets"><?php echo esc_html_x( 'What I do', 'About me section small title', 'avi' ); ?></span></p>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Section About Me"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|70"}}},"className":"section section--about-me","layout":{"type":"default"}} -->
+<section class="wp-block-group alignwide section section--about-me" id="section-about-me" style="margin-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:group {"metadata":{"name":"Section header"},"className":"section__header grid","layout":{"type":"default"}} -->
+	<div class="wp-block-group section__header grid">
+		<!-- wp:heading {"level":1} -->
+		<h1 class="wp-block-heading"><?php echo esc_html_x( 'Armed with my knowledge of product and brand, I am adept at problem-solving, storytelling, and delivering immersive experiences.', 'About me section title', 'avi' ); ?></h1>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"metadata":{"name":"Section content"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"className":"section__content grid","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group section__content grid">
+		<!-- wp:paragraph -->
+		<p><?php echo esc_html_x( 'I am David Gearhart, a Digital Designer based in New York, USA. I\'ve been in the industry for 10+ years, creating designs for both digital and print projects for clients such as Sony, Mitsubishi, General Electric, and Louis Vuitton. Currently working at IBM as a Digital Art Director.', 'About me section text', 'avi' ); ?></p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}},"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|50"}}},"textColor":"contrast","className":"has-heading-font js-animation--highlighted-text","fontSize":"xxxx-large"} -->
-		<p class="has-heading-font js-animation--highlighted-text has-contrast-color has-text-color has-link-color has-xxxx-large-font-size" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--50)"><span><?php echo wp_kses_post( _x( 'I am <em>developing</em> stylish and technological WordPress <em>themes</em> focusing on digital storytelling and product approach. Writing about <em>web development, live </em>and<em> travel</em>.', 'About me section text', 'avi' ) ); ?></span></p>
-		<!-- /wp:paragraph -->
+		<!-- wp:gallery {"align":"wide"} -->
+		<figure class="wp-block-gallery alignwide has-nested-images columns-default is-cropped">
+			<!-- wp:image {"sizeSlug":"large","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+			<figure class="wp-block-image size-large"><img alt=""/></figure>
+			<!-- /wp:image -->
 
-		<!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"large","style":{"border":{"radius":"0.375rem"}}} -->
-		<figure class="wp-block-image size-large has-custom-border">
-			<img alt="" style="border-radius:0.375rem;aspect-ratio:3/4;object-fit:cover"/>
+			<!-- wp:image {"sizeSlug":"large","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+			<figure class="wp-block-image size-large"><img alt=""/></figure>
+			<!-- /wp:image -->
+
+			<!-- wp:image {"sizeSlug":"large","style":{"color":{"duotone":"var:preset|duotone|grayscale"}}} -->
+			<figure class="wp-block-image size-large"><img alt=""/></figure>
+			<!-- /wp:image -->
 		</figure>
-		<!-- /wp:image -->
-
-		<!-- wp:buttons {"layout":{"type":"flex"}} -->
-		<div class="wp-block-buttons">
-			<!-- wp:button {"width":100,"className":"has-icon is-style-outline"} -->
-			<div class="wp-block-button has-custom-width wp-block-button__width-100 has-icon is-style-outline">
-				<a class="wp-block-button__link wp-element-button" href="/about"><span class="button__text"><?php echo esc_html_x( 'About me', 'About me section button text', 'avi' ); ?></span><span class="button__icon"><?php echo esc_html_x( '↗', 'About me section button icon', 'avi' ); ?></span></a>
-			</div>
-			<!-- /wp:button -->
-		</div>
-		<!-- /wp:buttons -->
+		<!-- /wp:gallery -->
 	</div>
 	<!-- /wp:group -->
 </section>

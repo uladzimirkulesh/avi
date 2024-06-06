@@ -2,21 +2,6 @@
 Post date
 -------------------------------------------------------*/
 
-.wp-block-post-date {
-	position: relative;
-}
-
-.wp-block-post-date::before {
-	content: "";
-	width: 0.4375rem;
-	height: 0.4375rem;
-	display: inline-block;
-	margin-right: 0.5rem;
-	background-color: var(--wp--preset--color--contrast);
-	border-radius: 50%;
-	vertical-align: 6%;
-}
-
 .wp-block-post-date a {
 	display: inline-block;
 

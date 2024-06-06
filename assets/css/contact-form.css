@@ -1,0 +1,95 @@
+/*-------------------------------------------------------
+Contact Form 7
+-------------------------------------------------------*/
+
+.wpcf7-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--wp--style--block-gap);
+	grid-template-rows: auto;
+}
+
+.wpcf7-form > * {
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.wpcf7__email {
+		grid-column: 1 / 2;
+	}
+
+	.wpcf7__phone {
+		grid-column: 2 / 3;
+	}
+}
+
+@media only screen and (min-width: 782px) {
+	.wpcf7__email {
+		grid-column: 1 / -1;
+	}
+
+	.wpcf7__phone {
+		grid-column: 1 / -1;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.wpcf7__email {
+		grid-column: 1 / 2;
+	}
+
+	.wpcf7__phone {
+		grid-column: 2 / 3;
+	}
+}
+
+.wpcf7-form > p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wpcf7-form-control-wrap {
+	display: block;
+}
+
+.wpcf7-not-valid-tip {
+	margin-top: calc(var(--wp--style--block-gap) / 4);
+	color: var(--wp--preset--color--danger);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 500;
+}
+
+.wpcf7-spinner {
+	vertical-align: middle;
+}
+
+.wpcf7 form .wpcf7-response-output {
+	margin: var(--wp--style--block-gap) 0 0;
+	padding: calc(var(--wp--style--block-gap) / 2) var(--wp--style--block-gap);
+	color: var(--wp--preset--color--contrast-text);
+	border: 1px solid rgba(0, 160, 210, 0.7); /* Blue */
+	background-color: rgba(0, 160, 210, 0.7); /* Blue */
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+	border-color: rgba(70, 180, 80, 0.7); /* Green */
+	background-color: rgba(70, 180, 80, 0.7); /* Green */
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+	border-color: rgba(227, 5, 26, 0.7); /* Red */
+	background-color: rgba(227, 5, 26, 0.7); /* Red */
+}
+
+.wpcf7 form.spam .wpcf7-response-output {
+	border-color: rgba(245, 110, 40, 0.7); /* Orange */
+	background-color: rgba(245, 110, 40, 0.7); /* Orange */
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: rgba(255, 185, 0, 0.7); /* Yellow */
+	background-color: rgba(255, 185, 0, 0.7); /* Yellow */
+}

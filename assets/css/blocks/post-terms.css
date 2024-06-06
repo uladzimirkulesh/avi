@@ -2,21 +2,6 @@
 Post terms
 -------------------------------------------------------*/
 
-.wp-block-post-terms {
-	position: relative;
-}
-
-.wp-block-post-terms:not(.is-style-pill)::before {
-	content: "";
-	width: 0.4375rem;
-	height: 0.4375rem;
-	display: inline-block;
-	margin-right: 0.5rem;
-	background-color: var(--wp--preset--color--contrast);
-	border-radius: 50%;
-	vertical-align: 6%;
-}
-
 .wp-block-post-terms > * {
 	display: inline-block;
 }
@@ -57,7 +42,6 @@ Pill
 
 	color: var(--wp--preset--color--contrast);
 	font-size: var(--wp--preset--font-size--small);
-	font-weight: 500;
 	line-height: var(--wp--style--block-gap);
 	letter-spacing: 0.015em;
 	background-color: var(--wp--preset--color--contrast-5);

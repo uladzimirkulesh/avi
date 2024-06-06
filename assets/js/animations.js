@@ -25,42 +25,6 @@
 	}
 
 	/*-------------------------------------------------------
-	Parallax for hero image
-	-------------------------------------------------------*/
-
-	function heroImgParallax() {
-		const parallaxElements = gsap.utils.toArray( '.js-animation--hero-img-parallax' );
-
-		parallaxElements.forEach( ( parallaxElement ) => {
-			var parallaxImg = parallaxElement.querySelector( 'img' );
-			let tl = gsap.timeline();
-
-			tl.set( parallaxImg, {
-				scale: 1.1,
-				y: '0'
-			} );
-
-			tl.to( parallaxImg, {
-				scale: 1,
-				duration: 1.2,
-				delay: 0.2,
-				ease: Power4.easeOut
-			} );
-
-			tl.to( parallaxImg, {
-				y: '25%',
-				ease: Linear.easeNone,
-				scrollTrigger: {
-					trigger: parallaxElement,
-					start: 'top top',
-					end: 'bottom top',
-					scrub: true
-				}
-			} );
-		} );
-	}
-
-	/*-------------------------------------------------------
 	Page transitions when page loading and leaving
 	-------------------------------------------------------*/
 
@@ -78,7 +42,7 @@
 			ease: Power4.easeInOut,
 			delay: 0.4,
 			onStart: () => {
-				heroImgParallax();
+				// heroImgParallax();
 			}
 		} );
 	}
@@ -97,7 +61,7 @@
 			ease: Power4.easeInOut,
 			delay: 0.4,
 			onStart: () => {
-				heroImgParallax();
+				// heroImgParallax();
 			}
 		} );
 	}
@@ -174,30 +138,6 @@
 	}
 
 	/*-------------------------------------------------------
-	Highlighted Text
-	-------------------------------------------------------*/
-
-	function highlightedText() {
-		const highlightedTexts = gsap.utils.toArray( '.js-animation--highlighted-text' );
-
-		highlightedTexts.forEach( function( highlightedText ) {
-			var mask = highlightedText.querySelectorAll( 'span' );
-
-			gsap.to( mask, {
-				backgroundSize: '200% 100%',
-				stagger: 0.5,
-				ease: Linear.easeNone,
-				scrollTrigger: {
-					trigger: highlightedText,
-					start: 'top 66.66667%',
-					end: () => `+=${ highlightedText.offsetHeight * 3 }`,
-					scrub: 1
-				}
-			} );
-		} );
-	}
-
-	/*-------------------------------------------------------
 	Fire on document ready
 	-------------------------------------------------------*/
 
@@ -211,7 +151,6 @@
 
 	$( window ).on( 'load.avi', function() {
 		pageTransitions();
-		highlightedText();
 	} );
 
 	/*-------------------------------------------------------
@@ -219,7 +158,7 @@
 	-------------------------------------------------------*/
 
 	$( window ).on( 'resize.avi', function() {
-		highlightedText();
+
 	} );
 
 } )( jQuery );

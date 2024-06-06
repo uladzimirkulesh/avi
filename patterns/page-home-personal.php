@@ -9,8 +9,10 @@
  */
 ?>
 
-<!-- wp:pattern {"slug":"avi/section-landing-hero"} /-->
-<!-- wp:pattern {"slug":"avi/section-about-me"} /-->
-<!-- wp:pattern {"slug":"avi/section-latest-projects"} /-->
-<!-- wp:pattern {"slug":"avi/section-latest-posts"} /-->
-<!-- wp:pattern {"slug":"avi/section-contact-me"} /-->
+<!-- wp:pattern {"slug":"avi/section-hero"} /-->
+<!-- wp:pattern {"slug":"avi/section-about"} /-->
+<!-- wp:pattern {"slug":"avi/section-services"} /-->
+<!-- wp:pattern {"slug":"avi/section-recent-projects"} /-->
+<!-- wp:pattern {"slug":"avi/section-process"} /-->
+<!-- wp:pattern {"slug":"avi/section-latest-articles"} /-->
+<!-- wp:pattern {"slug":"avi/section-contact"} /-->
