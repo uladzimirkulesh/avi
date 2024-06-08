@@ -2,77 +2,32 @@
 Query
 -------------------------------------------------------*/
 
-.wp-block-query .columns-3 {
-	gap: calc(var(--wp--style--block-gap) * 2) var(--wp--style--block-gap);
+.wp-block-query.grid > * {
+	grid-column: 1 / -1;
 }
 
-@media only screen and (max-width: 639px) {
-	.wp-block-query .columns-3 {
-		grid-template-columns: 1fr !important;
-	}
-}
-
-@media only screen and (min-width: 640px) {
-	.wp-block-query .columns-3 {
-		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+@media only screen and (min-width: 768px) {
+	.wp-block-query.grid > * {
+		grid-column: 3 / 9;
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.wp-block-query .columns-3 {
-		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+	.wp-block-query.grid > * {
+		grid-column: 5 / 13;
 	}
 }
 
-
-
-.wp-block-query .columns-4 {
-	gap: calc(var(--wp--style--block-gap) * 2) var(--wp--style--block-gap);
+.wp-block-query.grid .wp-block-post-template {
+	border-top: 1px solid var(--wp--preset--color--contrast-4);
 }
-
-@media only screen and (max-width: 639px) {
-	.wp-block-query .columns-4 {
-		grid-template-columns: 1fr !important;
-	}
-}
-
-@media only screen and (min-width: 640px) {
-	.wp-block-query .columns-4 {
-		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.wp-block-query .columns-4 {
-		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.wp-block-query .columns-4 {
-		grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-	}
-}
-
-/*-------------------------------------------------------
-Query Item
--------------------------------------------------------*/
 
 /*
-Query item featured image
+Post date
 */
 
-.wp-block-query .wp-block-post-featured-image {
-	overflow: hidden;
-}
-
-.wp-block-query .wp-block-post-featured-image img {
-	transform: scale(1);
-	transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-}
-
-.wp-block-query .wp-block-post-featured-image a:hover img,
-.wp-block-query .wp-block-post-featured-image a:focus img,
-.wp-block-query .wp-block-post-featured-image a:active img {
-	transform: scale(1.05);
+@media only screen and (min-width: 782px) {
+	.wp-block-query.grid .wp-block-post-date {
+		text-align: right;
+	}
 }

@@ -7,7 +7,7 @@ Description: Avi is an easy-to-use WordPress theme inspired by simplicity. With 
 Requires at least: 6.1
 Tested up to: 6.5
 Requires PHP: 5.6
-Version: 1.0.011111111111111
+Version: 1.0.011111111111111111
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: avi
@@ -353,6 +353,53 @@ Entry footer
 
 .entry-footer:not(:has(*)) {
 	display: none;
+}
+
+/*-------------------------------------------------------
+Archive
+-------------------------------------------------------*/
+
+/*
+Page title
+*/
+
+.page-header > .wp-block-heading {
+	grid-column: 1 / -1;
+}
+
+.page-header > .wp-block-heading:not([class*="-font-size"]) {
+	font-size: clamp(2.625rem, 6.09375vw + 1.40625rem, 7.5rem);
+}
+
+/*
+Page description
+*/
+
+.page-header > p {
+	grid-column: 1 / -1;
+}
+
+.page-header > p:not([class*="-font-size"]) {
+	font-size: clamp(1.125rem, 0.78125vi + 0.96875rem, 1.75rem);
+	line-height: 1.33333;
+}
+
+@media only screen and (min-width: 600px) {
+	.page-header > p {
+		grid-column: 3 / 9;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.page-header > p {
+		grid-column: 5 / 9;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.page-header > p {
+		grid-column: 7 / 13;
+	}
 }
 
 /*-------------------------------------------------------
