@@ -31,3 +31,26 @@ Post date
 		text-align: right;
 	}
 }
+
+/*-------------------------------------------------------
+Query Item
+-------------------------------------------------------*/
+
+/*
+Query item featured image
+*/
+
+.wp-block-query .wp-block-post-featured-image {
+	overflow: hidden;
+}
+
+.wp-block-query .wp-block-post-featured-image img {
+	transform: scale(1);
+	transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+.wp-block-query .wp-block-post-featured-image a:hover img,
+.wp-block-query .wp-block-post-featured-image a:focus img,
+.wp-block-query .wp-block-post-featured-image a:active img {
+	transform: scale(1.05);
+}

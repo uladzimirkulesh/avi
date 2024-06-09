@@ -10,8 +10,8 @@
 			},
 			"lineHeight": "1.5",
 			"letterSpacing": {
-				"text": "0.015em",
-				"heading": "0"
+				"text": "0",
+				"heading": "-0.011em"
 			},
 			"spacing": {
 				"globalPaddingTop": "calc(var(--wp--preset--spacing--70) + var(--header-height, 96px))",
@@ -133,32 +133,24 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Neue Montreal",
+							"fontFamily": "Inter",
 							"fontStyle": "normal",
-							"fontWeight": "400",
+							"fontWeight": "100 900",
 							"src": [
-								"file:./assets/fonts/neue-montreal/PPNeueMontreal-Regular.woff2"
+								"file:./assets/fonts/inter/InterVariable.woff2"
 							]
 						},
 						{
-							"fontFamily": "Neue Montreal",
+							"fontFamily": "Inter",
 							"fontStyle": "italic",
-							"fontWeight": "400",
+							"fontWeight": "100 900",
 							"src": [
-								"file:./assets/fonts/neue-montreal/PPNeueMontreal-Italic.otf"
-							]
-						},
-						{
-							"fontFamily": "Neue Montreal",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/neue-montreal/PPNeueMontreal-Medium.otf"
+								"file:./assets/fonts/inter/InterVariable-Italic.woff2"
 							]
 						}
 					],
-					"fontFamily": "\"Neue Montreal\", sans-serif",
-					"name": "Neue Montreal",
+					"fontFamily": "\"Inter\", sans-serif",
+					"name": "Inter",
 					"slug": "body"
 				},
 				{
@@ -416,8 +408,7 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--normal)",
-					"lineHeight": "var(--wp--custom--line-height)",
-					"letterSpacing": "0"
+					"lineHeight": "var(--wp--custom--line-height)"
 				},
 				"elements": {
 					"link": {
@@ -460,8 +451,7 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--normal)",
-					"lineHeight": "var(--wp--custom--line-height)",
-					"letterSpacing": "0"
+					"lineHeight": "var(--wp--custom--line-height)"
 				},
 				"elements": {
 					"link": {
@@ -510,8 +500,7 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--body)",
 					"fontSize": "var(--wp--preset--font-size--normal)",
-					"fontWeight": "500",
-					"letterSpacing": "0"
+					"fontWeight": "500"
 				},
 				"elements": {
 					"link": {
@@ -683,8 +672,7 @@
 					"text": "var(--wp--preset--color--contrast)"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"letterSpacing": "0"
+					"fontSize": "var(--wp--preset--font-size--small)"
 				},
 				"spacing": {
 					"margin": {
@@ -973,8 +961,7 @@
 					"text": "var(--wp--preset--color--contrast-2)"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"textAlign": "center"
+					"fontSize": "var(--wp--preset--font-size--small)"
 				},
 				"spacing": {
 					"margin": {

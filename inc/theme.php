@@ -8,8 +8,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define('ANOKA_THEME_URI','https://uladzimirkulesh.com/portfolio/avi');
-define('ANOKA_THEME_LIVE_URI','https://avi.uladzimirkulesh.com');
+define('AVI_THEME_URI','https://uladzimirkulesh.com/portfolio/avi');
+define('AVI_THEME_LIVE_URI','https://avi.uladzimirkulesh.com');
 
 if ( ! function_exists( 'avi_admin_page_styles' ) ) {
 
@@ -22,22 +22,22 @@ if ( ! function_exists( 'avi_admin_page_styles' ) ) {
 	 */
 	function avi_admin_page_styles( $hook ){
 
-		if ( 'appearance_page_avi' != $hook ) {
+		if ( 'appearance_page_avi-theme' != $hook ) {
 			return;
 		}
 
 		$theme_version  = wp_get_theme()->get( 'Version' );
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 
-		// Register plugins stylesheets.
+		// Register admin stylesheets.
 		wp_register_style(
 			'avi-theme-admin-page',
 			get_template_directory_uri() . '/assets/css/admin.css',
-			array( 'avi-style' ),
+			array(),
 			$version_string
 		);
 
-		// Enqueue plugins stylesheets.
+		// Enqueue admin stylesheets.
 		wp_enqueue_style( 'avi-theme-admin-page' );
 
 	}
@@ -74,15 +74,21 @@ if ( ! function_exists( 'avi_theme_admin_page' ) ) {
 	 */
 	function avi_theme_admin_page() {
 		?>
-		<div class="wrap">
-			<h1><?php esc_html_e( 'Avi Theme', 'avi' ); ?></h1>
+		<div class="wrap avi__wrap">
+			<h1><?php echo esc_html_x( 'Avi Theme', 'Theme admin page title', 'avi' ); ?></h1>
 
-			<p><?php esc_html_e( 'Thank You for using Avi!', 'avi' ); ?></p>
+			<p class="avi__theme-description"><?php echo esc_html_x( 'Introducing Avi - the ultimate WordPress theme for digital designers looking to showcase their portfolio in style!', 'Theme admin page text', 'avi' ); ?></p>
+
+			<p class="avi__theme-description"><?php echo esc_html_x( 'With its sleek and modern design, Avi is the perfect platform to showcase your creative work and impress potential clients. Whether you\'re a graphic designer, web developer, or photographer, Avi has got you covered.', 'Theme admin page text', 'avi' ); ?></p>
+
+			<p class="avi__theme-description"><?php echo esc_html_x( 'Featuring a fully customizable layout, Avi allows you to effortlessly create a stunning portfolio that truly reflects your unique style and brand. Choose from a variety of pre-designed templates or create your own from scratch - the possibilities are endless!', 'Theme admin page text', 'avi' ); ?></p>
+
+			<p class="avi__theme-description"><?php echo esc_html_x( 'So why settle for a generic portfolio when you can have Avi - the ultimate WordPress theme for digital designers. Get ready to showcase your talent and elevate your brand with Avi. Try it now!', 'Theme admin page text', 'avi' ); ?></p>
 
 			<p class="submit">
-				<a href="<?php echo esc_url( ANOKA_THEME_URI ); ?>" class="button button-primary" target="_blank"><?php esc_html_e( 'Theme Homepage', 'avi' ); ?></a>
+				<a href="<?php echo esc_url( AVI_THEME_URI ); ?>" class="button button-primary" target="_blank"><?php echo esc_html_x( 'Theme Homepage', 'Theme admin page button text', 'avi' ); ?></a>
 
-				<a href="<?php echo esc_url( ANOKA_THEME_LIVE_URI ); ?>" class="button button-primary" target="_blank"><?php esc_html_e( 'Live Preview', 'avi' ); ?></a>
+				<a href="<?php echo esc_url( AVI_THEME_LIVE_URI ); ?>" class="button button-primary" target="_blank"><?php echo esc_html_x( 'Live Preview', 'Theme admin page button text', 'avi' ); ?></a>
 			</p>
 
 			<div class="clear"></div>

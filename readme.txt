@@ -4,13 +4,19 @@ Contributors: Uladzimir Kulesh
 Requires at least: 6.1
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Avi is an easy-to-use WordPress theme inspired by simplicity. With block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s colors and eye-catching design will let your work shine. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+Introducing Avi - the ultimate WordPress theme for digital designers looking to showcase their portfolio in style!
+
+With its sleek and modern design, Avi is the perfect platform to showcase your creative work and impress potential clients. Whether you're a graphic designer, web developer, or photographer, Avi has got you covered.
+
+Featuring a fully customizable layout, Avi allows you to effortlessly create a stunning portfolio that truly reflects your unique style and brand. Choose from a variety of pre-designed templates or create your own from scratch - the possibilities are endless!
+
+So why settle for a generic portfolio when you can have Avi - the ultimate WordPress theme for digital designers. Get ready to showcase your talent and elevate your brand with Avi. Try it now!
 
 == Installation ==
 
@@ -21,8 +27,8 @@ Avi is an easy-to-use WordPress theme inspired by simplicity. With block pattern
 
 == Changelog ==
 
-= 1.1.0 =
-* Released: April 7, 2024
+= 1.0.0 =
+* Released: June 9, 2024
 
 == Copyright ==
 
@@ -39,14 +45,9 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-== Credits ==
+=== Fonts ===
 
-Lenis, Copyright darkroom.engineering
-License: MIT
-Source: https://github.com/darkroomengineering/lenis
-
-=== Images ===
-
-Copyright Unsplash
-License: Unsplash license
-Source: https://unsplash.com/
+Inter Font
+Copyright 2016 Rasmus Andersson (RSMS), https://rsms.me/
+License: SIL Open Font License, Version 1.1, http://scripts.sil.org/OFL
+Source: https://rsms.me/inter/

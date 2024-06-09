@@ -43,7 +43,6 @@ Pill
 	color: var(--wp--preset--color--contrast);
 	font-size: var(--wp--preset--font-size--small);
 	line-height: var(--wp--style--block-gap);
-	letter-spacing: 0.015em;
 	background-color: var(--wp--preset--color--contrast-5);
 	border-radius: 2.5rem;
 }

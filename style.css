@@ -3,11 +3,11 @@ Theme Name: Avi
 Theme URI: https://uladzimirkulesh.com/portfolio/avi
 Author: Uladzimir Kulesh
 Author URI: https://uladzimirkulesh.com
-Description: Avi is an easy-to-use WordPress theme inspired by simplicity. With block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s colors and eye-catching design will let your work shine. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+Description: Introducing Avi - the ultimate WordPress theme for digital designers looking to showcase their portfolio in style! With its sleek and modern design, Avi is the perfect platform to showcase your creative work and impress potential clients. Whether you're a graphic designer, web developer, or photographer, Avi has got you covered. Featuring a fully customizable layout, Avi allows you to effortlessly create a stunning portfolio that truly reflects your unique style and brand. Choose from a variety of pre-designed templates or create your own from scratch - the possibilities are endless! So why settle for a generic portfolio when you can have Avi - the ultimate WordPress theme for digital designers. Get ready to showcase your talent and elevate your brand with Avi. Try it now!
 Requires at least: 6.1
 Tested up to: 6.5
 Requires PHP: 5.6
-Version: 1.0.011111111111111111
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: avi
@@ -19,22 +19,19 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-}
 
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-html,
-body {
-	height: 100%;
-	scroll-behavior: smooth;
+	font-feature-settings: "cv10";
+	font-variation-settings: "opsz" 32;
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+figcaption {
+	text-align: center;
 }
 
 /*

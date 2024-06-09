@@ -1,6 +1,12 @@
 # Avi WordPress Theme
 
-Avi is an easy-to-use WordPress theme inspired by simplicity. With block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s colors and eye-catching design will let your work shine. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+Introducing Avi - the ultimate WordPress theme for digital designers looking to showcase their portfolio in style!
+
+With its sleek and modern design, Avi is the perfect platform to showcase your creative work and impress potential clients. Whether you're a graphic designer, web developer, or photographer, Avi has got you covered.
+
+Featuring a fully customizable layout, Avi allows you to effortlessly create a stunning portfolio that truly reflects your unique style and brand. Choose from a variety of pre-designed templates or create your own from scratch - the possibilities are endless!
+
+So why settle for a generic portfolio when you can have Avi - the ultimate WordPress theme for digital designers. Get ready to showcase your talent and elevate your brand with Avi. Try it now!
 
 ## Installation
 
@@ -13,14 +19,13 @@ Avi is an easy-to-use WordPress theme inspired by simplicity. With block pattern
 
 ### Spacing (320-1600px):
 
-* 10: 12px			- 0.5 line
-* 20: 20-24px		- 1 line
-* 30: 36-48px		- 1.5-2 lines
-* 40: 48-72px		- 2-3 lines
-* 50: 56-84px		- 3-4 lines
-* 60: 96-144px	   - 4-6 lines
-* 70: 120-240px	- 5-10 lines
-
+* 10: 12px
+* 20: 20-24px
+* 30: 36-48px
+* 40: 48-72px
+* 50: 56-84px
+* 60: 96-144px
+* 70: 120-240px
 
 ### Font-sizes (320-1600px):
 
@@ -42,8 +47,8 @@ browser-sync start --proxy "localhost:8888/wordpress" --files "**/*" --browser "
 
 ## Changelog
 
-**1.1.0**
-   * Released: April 7, 2024
+**1.0.0**
+   * Released: June 9, 2024
 
 ## Copyright
 
@@ -60,14 +65,9 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-## Credits
+## Fonts
 
-1. **Lenis**, Copyright darkroom.engineering
-   * License: MIT
-   * Source: https://github.com/darkroomengineering/lenis
-
-## Images
-
-Copyright Unsplash
-   * License: Unsplash license
-   * Source: https://unsplash.com/
+### Inter Font
+* Copyright 2016 Rasmus Andersson (RSMS), https://rsms.me/
+* License: SIL Open Font License, Version 1.1, http://scripts.sil.org/OFL
+* Source: https://rsms.me/inter/

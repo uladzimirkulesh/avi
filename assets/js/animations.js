@@ -2,85 +2,24 @@
 
 	"use strict";
 
-	// Register GSAP ScrollTrigger plugin
-	gsap.registerPlugin( ScrollTrigger );
-
-	/*-------------------------------------------------------
-	Lenis smooth scroll
-	-------------------------------------------------------*/
-
-	function initLenis() {
-		$( '.wp-block-navigation__responsive-container' ).attr( 'data-lenis-prevent', '' );
-
-		const lenis = new Lenis();
-
-		lenis.on('scroll', ScrollTrigger.update);
-
-		// GSAP ScrollTrigger integration
-		gsap.ticker.add( ( time ) => {
-		 	lenis.raf( time * 1000 );
-		} );
-
-		gsap.ticker.lagSmoothing( 0 );
-	}
-
 	/*-------------------------------------------------------
 	Page transitions when page loading and leaving
 	-------------------------------------------------------*/
 
 	// First page load
 	function firstPageLoad() {
-		let tl = gsap.timeline();
-
-		tl.set( '.loading-screen', {
-			top: 0
-		} );
-
-		tl.to( '.loading-screen', {
-			duration: 0.8,
-			top: '-100vh',
-			ease: Power4.easeInOut,
-			delay: 0.4,
-			onStart: () => {
-				// heroImgParallax();
-			}
-		} );
+		$( ".loading-screen" ).animate( { top: '-100%' }, 600 );
 	}
 
 	// Page load
 	function pageLoad() {
-		let tl = gsap.timeline();
-
-		tl.set( '.loading-screen', {
-			top: 0
-		} );
-
-		tl.to( '.loading-screen', {
-			duration: 0.8,
-			top: '-100vh',
-			ease: Power4.easeInOut,
-			delay: 0.4,
-			onStart: () => {
-				// heroImgParallax();
-			}
-		} );
+		$( ".loading-screen" ).animate( { top: '-100%' }, 600 );
 	}
 
 	// Page leave
 	function pageLeave( linkTarget ) {
-		let tl = gsap.timeline();
-
-		tl.set( '.loading-screen', {
-			top: '100vh'
-		} );
-
-		tl.to( '.loading-screen', {
-			duration: 0.8,
-			top: 0,
-			ease: Power4.easeIn,
-			onComplete: () => {
-				window.location.href = linkTarget;
-			}
+		$( ".loading-screen" ).animate( { top: '100%' }, 0 ).animate( { top: '0' }, 600, function() {
+			window.location = linkTarget;
 		} );
 	}
 
@@ -138,27 +77,11 @@
 	}
 
 	/*-------------------------------------------------------
-	Fire on document ready
-	-------------------------------------------------------*/
-
-	$( document ).ready( function() {
-		initLenis();
-	} );
-
-	/*-------------------------------------------------------
 	Fire on window load
 	-------------------------------------------------------*/
 
 	$( window ).on( 'load.avi', function() {
 		pageTransitions();
-	} );
-
-	/*-------------------------------------------------------
-	Fire on window resize
-	-------------------------------------------------------*/
-
-	$( window ).on( 'resize.avi', function() {
-
 	} );
 
 } )( jQuery );
