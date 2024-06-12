@@ -28,7 +28,7 @@ So why settle for a generic portfolio when you can have Avi - the ultimate WordP
 == Changelog ==
 
 = 1.0.0 =
-* Released: June 9, 2024
+* Released: June 12, 2024
 
 == Copyright ==
 

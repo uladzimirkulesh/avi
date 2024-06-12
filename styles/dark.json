@@ -1,0 +1,131 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#d3ff37",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "rgb(21, 21, 23)",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "rgb(21, 21, 23)",
+					"name": "Base / Two",
+					"slug": "base-2"
+				},
+				{
+					"color": "rgba(25, 25, 27, 0.6)",
+					"name": "Base / Three",
+					"slug": "base-3"
+				},
+				{
+					"color": "rgb(239, 239, 239)",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "rgba(239, 239, 239, 0.5)",
+					"name": "Contrast / Two",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "rgba(239, 239, 239, 0.15)",
+					"name": "Contrast / Three",
+					"slug": "contrast-3"
+				},
+				{
+					"color": "rgba(239, 239, 239, 0.11)",
+					"name": "Contrast / Four",
+					"slug": "contrast-4"
+				},
+				{
+					"color": "rgba(239, 239, 239, 0.07)",
+					"name": "Contrast / Five",
+					"slug": "contrast-5"
+				},
+				{
+					"color": "#ff003c",
+					"name": "Danger",
+					"slug": "danger"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)",
+					"background": "var(--wp--preset--color--base)"
+				},
+				"border": {
+					"width": "1px",
+					"style": "solid",
+					"color": "var(--wp--preset--color--contrast-3)",
+					"radius": "3rem"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.6875rem",
+						"right": "1.75rem",
+						"bottom": "0.6875rem",
+						"left": "1.75rem"
+					}
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--base)",
+						"background": "var(--wp--preset--color--primary)"
+					},
+					"border": {
+						"color": "var(--wp--preset--color--primary)"
+					}
+				},
+				":focus": {
+					"color": {
+						"text": "var(--wp--preset--color--base)",
+						"background": "var(--wp--preset--color--primary)"
+					},
+					"border": {
+						"color": "var(--wp--preset--color--primary)"
+					}
+				},
+				":active": {
+					"color": {
+						"text": "var(--wp--preset--color--base)",
+						"background": "var(--wp--preset--color--primary)"
+					},
+					"border": {
+						"color": "var(--wp--preset--color--primary)"
+					}
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--contrast)"
+					}
+				},
+				":focus": {
+					"color": {
+						"text": "var(--wp--preset--color--contrast)"
+					}
+				},
+				":active": {
+					"color": {
+						"text": "var(--wp--preset--color--contrast)"
+					}
+				}
+			}
+		}
+	}
+}

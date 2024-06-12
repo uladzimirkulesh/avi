@@ -48,7 +48,7 @@ browser-sync start --proxy "localhost:8888/wordpress" --files "**/*" --browser "
 ## Changelog
 
 **1.0.0**
-   * Released: June 9, 2024
+   * Released: June 12, 2024
 
 ## Copyright
 

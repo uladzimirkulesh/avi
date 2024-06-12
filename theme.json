@@ -23,6 +23,11 @@
 			"defaultGradients": false,
 			"palette": [
 				{
+					"color": "#2c45d2",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
 					"color": "#efefef",
 					"name": "Base",
 					"slug": "base"
@@ -61,16 +66,6 @@
 					"color": "rgba(21, 21, 23, 0.04)",
 					"name": "Contrast / Five",
 					"slug": "contrast-5"
-				},
-				{
-					"color": "#2c45d2",
-					"name": "Primary",
-					"slug": "primary"
-				},
-				{
-					"color": "#465fea",
-					"name": "Primary / Two",
-					"slug": "primary-2"
 				},
 				{
 					"color": "#ff003c",

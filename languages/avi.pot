@@ -1,0 +1,923 @@
+# Copyright (C) 2024 Uladzimir Kulesh
+# This file is distributed under the same license as the Avi package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Avi\n"
+"Report-Msgid-Bugs-To: https://uladzimirkulesh.com\n"
+"POT-Creation-Date: 2024-06-12 17:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Uladzimir Kulesh <hello@uladzimirkulesh.com>\n"
+"Language-Team: Uladzimir Kulesh <hello@uladzimirkulesh.com>\n"
+"Language: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.9; wp-6.5.4\n"
+"X-Domain: avi"
+
+#: patterns/section-about-me.php:23
+msgctxt "About me section text"
+msgid ""
+"I am David Gearhart, a Digital Designer based in New York, USA. I've been in "
+"the industry for 10+ years, creating designs for both digital and print "
+"projects for clients such as Sony, Mitsubishi, General Electric, and Louis "
+"Vuitton. Currently working at IBM as a Digital Art Director."
+msgstr ""
+
+#: patterns/section-about-me.php:15
+msgctxt "About me section title"
+msgid ""
+"Armed with my knowledge of product and brand, I am adept at problem-solving, "
+"storytelling, and delivering immersive experiences."
+msgstr ""
+
+#: patterns/section-about.php:15
+msgctxt "About section text"
+msgid ""
+"With a love for clean designs, beautiful typographies, and interactive "
+"development, I work as a freelancer for agencies, start-ups, and individuals."
+" My expertise in web development and my passion for live events and travel "
+"make for a unique combination in my work."
+msgstr ""
+
+#. Name of the theme
+msgid "Avi"
+msgstr ""
+
+#: functions.php:389
+msgid "Avi Theme"
+msgstr ""
+
+#: patterns/section-awards.php:35
+msgctxt "Awards list item text"
+msgid "Award"
+msgstr ""
+
+#: patterns/section-awards.php:47 patterns/section-awards.php:111
+msgctxt "Awards list item text"
+msgid "Awwwards"
+msgstr ""
+
+#: patterns/section-awards.php:79 patterns/section-awards.php:127
+msgctxt "Awards list item text"
+msgid "Behance"
+msgstr ""
+
+#: patterns/section-awards.php:63
+msgctxt "Awards list item text"
+msgid "CSS Design Awards"
+msgstr ""
+
+#: patterns/section-awards.php:95
+msgctxt "Awards list item text"
+msgid "CSS Winner"
+msgstr ""
+
+#: patterns/section-awards.php:115
+msgctxt "Awards list item text"
+msgid "Honorable Mention"
+msgstr ""
+
+#: patterns/section-awards.php:123
+msgctxt "Awards list item text"
+msgid "Itonga Theme"
+msgstr ""
+
+#: patterns/section-awards.php:59
+msgctxt "Awards list item text"
+msgid "Malavi Theme"
+msgstr ""
+
+#: patterns/section-awards.php:91
+msgctxt "Awards list item text"
+msgid "Melina Theme"
+msgstr ""
+
+#: patterns/section-awards.php:107
+msgctxt "Awards list item text"
+msgid "Neiman Theme"
+msgstr ""
+
+#: patterns/section-awards.php:31
+msgctxt "Awards list item text"
+msgid "Platform"
+msgstr ""
+
+#: patterns/section-awards.php:27
+msgctxt "Awards list item text"
+msgid "Project"
+msgstr ""
+
+#: patterns/section-awards.php:51 patterns/section-awards.php:67
+#: patterns/section-awards.php:99
+msgctxt "Awards list item text"
+msgid "Site of the Day"
+msgstr ""
+
+#: patterns/section-awards.php:43
+msgctxt "Awards list item text"
+msgid "Turanga Theme"
+msgstr ""
+
+#: patterns/section-awards.php:83 patterns/section-awards.php:131
+msgctxt "Awards list item text"
+msgid "UI Gallery Featured"
+msgstr ""
+
+#: patterns/section-awards.php:75
+msgctxt "Awards list item text"
+msgid "UK Portfolio Plugin"
+msgstr ""
+
+#: patterns/section-awards.php:15
+msgctxt "Awards section title"
+msgid "Awards"
+msgstr ""
+
+#: patterns/hidden-404.php:23
+msgid "Back to Home"
+msgstr ""
+
+#: patterns/hidden-page-header-blog.php:12
+msgctxt "Blog page header title"
+msgid "Blog"
+msgstr ""
+
+#: patterns/section-clients.php:15
+msgctxt "Clients section title"
+msgid "Clients"
+msgstr ""
+
+#. "Code by" text.
+#: patterns/footer-default.php:20
+#, php-format
+msgid "Code by %s"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Base / Three"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Base / Two"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Contrast / Five"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Contrast / Four"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Contrast / Three"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Contrast / Two"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Danger"
+msgstr ""
+
+#: theme.json:1 styles/dark.json:1
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: patterns/page-contact.php:45
+msgctxt "Contact page pattern adress block text"
+msgid "2118 Thornridge Cir. Syracuse,<br>Connecticut 35624"
+msgstr ""
+
+#: patterns/page-contact.php:41
+msgctxt "Contact page pattern adress block title"
+msgid "Adress"
+msgstr ""
+
+#: patterns/page-contact.php:29
+msgctxt "Contact page pattern contacts block text"
+msgid "<a href=\"mailto:#\">hello@davegearhart.com</a>"
+msgstr ""
+
+#: patterns/page-contact.php:33
+msgctxt "Contact page pattern contacts block text"
+msgid "<a href=\"tel:#\">+44 209 555 014</a>"
+msgstr ""
+
+#: patterns/page-contact.php:65
+msgctxt "Contact page pattern socials block link"
+msgid "<a href=\"#\" target=\"_blank\" rel=\"noreferrer noopener\">GitHub</a>"
+msgstr ""
+
+#: patterns/page-contact.php:57
+msgctxt "Contact page pattern socials block link"
+msgid ""
+"<a href=\"#\" target=\"_blank\" rel=\"noreferrer noopener\">Instagram</a>"
+msgstr ""
+
+#: patterns/page-contact.php:61
+msgctxt "Contact page pattern socials block link"
+msgid ""
+"<a href=\"#\" target=\"_blank\" rel=\"noreferrer noopener\">Telegram</a>"
+msgstr ""
+
+#: patterns/page-contact.php:53
+msgctxt "Contact page pattern socials block title"
+msgid "Socials"
+msgstr ""
+
+#: patterns/page-contact.php:17
+msgctxt "Contact page pattern text"
+msgid ""
+"Whether it's a conversation about all things design or thinking about a "
+"potential project or opportunity, get in touch."
+msgstr ""
+
+#: patterns/section-contact.php:25
+msgctxt "Contact section button text"
+msgid "Contact Me"
+msgstr ""
+
+#: patterns/section-contact.php:19
+msgctxt "Contact section text"
+msgid "Have a project in mind? Or you want to say hello, get in touch with me."
+msgstr ""
+
+#: patterns/page-contact.php:25
+msgctxt "Contact us page pattern contacts block title"
+msgid "Contacts"
+msgstr ""
+
+#: patterns/footer-default.php:32
+msgctxt "Copyright text"
+msgid "© 2024 all rights reserved"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Blank (Alternative 1)"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Blank (Alternative 2)"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Blank template"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Project Archive"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Project Archive Category"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Project Archive Tag"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Project Single"
+msgstr ""
+
+#: patterns/hidden-404.php:12
+msgctxt "Error code for a webpage that is not found."
+msgid "Error 404"
+msgstr ""
+
+#: patterns/section-experience.php:131
+msgctxt "Experience list item text"
+msgid "2016—2018"
+msgstr ""
+
+#: patterns/section-experience.php:115
+msgctxt "Experience list item text"
+msgid "2018—2019"
+msgstr ""
+
+#: patterns/section-experience.php:99
+msgctxt "Experience list item text"
+msgid "2019—2021"
+msgstr ""
+
+#: patterns/section-experience.php:83
+msgctxt "Experience list item text"
+msgid "2021—2023"
+msgstr ""
+
+#: patterns/section-experience.php:67
+msgctxt "Experience list item text"
+msgid "2022 – Now"
+msgstr ""
+
+#: patterns/section-experience.php:51
+msgctxt "Experience list item text"
+msgid "2023 – Now"
+msgstr ""
+
+#: patterns/section-experience.php:127
+msgctxt "Experience list item text"
+msgid "Audi"
+msgstr ""
+
+#: patterns/section-experience.php:31
+msgctxt "Experience list item text"
+msgid "Company name"
+msgstr ""
+
+#: patterns/section-experience.php:91
+msgctxt "Experience list item text"
+msgid "Design Director"
+msgstr ""
+
+#: patterns/section-experience.php:43
+msgctxt "Experience list item text"
+msgid "Digital Designer"
+msgstr ""
+
+#: patterns/section-experience.php:47
+msgctxt "Experience list item text"
+msgid "General Electric"
+msgstr ""
+
+#: patterns/section-experience.php:63
+msgctxt "Experience list item text"
+msgid "IBM"
+msgstr ""
+
+#: patterns/section-experience.php:75
+msgctxt "Experience list item text"
+msgid "Junior Designer"
+msgstr ""
+
+#: patterns/section-experience.php:111
+msgctxt "Experience list item text"
+msgid "Louis Vuitton"
+msgstr ""
+
+#: patterns/section-experience.php:79
+msgctxt "Experience list item text"
+msgid "Mitsubishi"
+msgstr ""
+
+#: patterns/section-experience.php:35
+msgctxt "Experience list item text"
+msgid "Period"
+msgstr ""
+
+#: patterns/section-experience.php:27
+msgctxt "Experience list item text"
+msgid "Position"
+msgstr ""
+
+#: patterns/section-experience.php:59
+msgctxt "Experience list item text"
+msgid "Senior Digital Designer"
+msgstr ""
+
+#: patterns/section-experience.php:95
+msgctxt "Experience list item text"
+msgid "Sony"
+msgstr ""
+
+#: patterns/section-experience.php:107
+msgctxt "Experience list item text"
+msgid "UI/UX Designer"
+msgstr ""
+
+#: patterns/section-experience.php:123
+msgctxt "Experience list item text"
+msgid "Web Developer"
+msgstr ""
+
+#: patterns/section-experience.php:15
+msgctxt "Experience section title"
+msgid "Experience"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Monospace Font"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "System Sans-serif"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "2X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "3X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "4X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "5X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "6X Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Normal"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: patterns/section-hero.php:23
+msgctxt "Hero section subtitle"
+msgid "Skilled in Web Design, UX/UI, Webflow and Front End Development."
+msgstr ""
+
+#: patterns/section-hero.php:17
+msgctxt "Hero section title"
+msgid "Digital<br>Designer"
+msgstr ""
+
+#. Author URI of the theme
+#: patterns/footer-default.php:21
+msgid "https://uladzimirkulesh.com"
+msgstr ""
+
+#. URI of the theme
+msgid "https://uladzimirkulesh.com/portfolio/avi"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Introducing Avi - the ultimate WordPress theme for digital designers looking "
+"to showcase their portfolio in style! With its sleek and modern design, Avi "
+"is the perfect platform to showcase your creative work and impress potential "
+"clients. Whether you're a graphic designer, web developer, or photographer, "
+"Avi has got you covered. Featuring a fully customizable layout, Avi allows "
+"you to effortlessly create a stunning portfolio that truly reflects your "
+"unique style and brand. Choose from a variety of pre-designed templates or "
+"create your own from scratch - the possibilities are endless! So why settle "
+"for a generic portfolio when you can have Avi - the ultimate WordPress theme "
+"for digital designers. Get ready to showcase your talent and elevate your "
+"brand with Avi. Try it now!"
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgctxt "Label"
+msgid "Search"
+msgstr ""
+
+#: patterns/section-latest-articles.php:47
+msgctxt "Latest articles section button text"
+msgid "Read All"
+msgstr ""
+
+#: patterns/section-latest-articles.php:15
+msgctxt "Latest articles section title"
+msgid "Latest Articles"
+msgstr ""
+
+#: patterns/hidden-no-results.php:12
+msgctxt "Message explaining that there are no results returned from a search"
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: patterns/hidden-404.php:16
+msgctxt "Message to convey that a webpage could not be found"
+msgid "The page you are looking for cannot be found."
+msgstr ""
+
+#: functions.php:391
+msgid "Pages"
+msgstr ""
+
+#: patterns/section-about-me.php:2
+msgctxt "Pattern title"
+msgid "About me section"
+msgstr ""
+
+#: patterns/page-about.php:2
+msgctxt "Pattern title"
+msgid "About page"
+msgstr ""
+
+#: patterns/section-about.php:2
+msgctxt "Pattern title"
+msgid "About section"
+msgstr ""
+
+#: patterns/section-awards.php:2
+msgctxt "Pattern title"
+msgid "Awards section"
+msgstr ""
+
+#: patterns/hidden-page-header-blog.php:2
+msgctxt "Pattern title"
+msgid "Blog Page Header"
+msgstr ""
+
+#: patterns/template-home-blogging.php:2
+msgctxt "Pattern title"
+msgid "Blogging home template"
+msgstr ""
+
+#: patterns/section-clients.php:2
+msgctxt "Pattern title"
+msgid "Clients section"
+msgstr ""
+
+#: patterns/page-contact.php:2
+msgctxt "Pattern title"
+msgid "Contact page"
+msgstr ""
+
+#: patterns/section-contact.php:2
+msgctxt "Pattern title"
+msgid "Contact section"
+msgstr ""
+
+#: patterns/footer-default.php:2
+msgctxt "Pattern title"
+msgid "Default footer"
+msgstr ""
+
+#: patterns/section-experience.php:2
+msgctxt "Pattern title"
+msgid "Experience section"
+msgstr ""
+
+#: patterns/section-hero.php:2
+msgctxt "Pattern title"
+msgid "Hero section"
+msgstr ""
+
+#: patterns/hidden-404.php:2
+msgctxt "Pattern title"
+msgid "Hidden 404"
+msgstr ""
+
+#: patterns/hidden-comments.php:2
+msgctxt "Pattern title"
+msgid "Hidden comments"
+msgstr ""
+
+#: patterns/hidden-no-results.php:2
+msgctxt "Pattern title"
+msgid "Hidden no results content"
+msgstr ""
+
+#: patterns/section-latest-articles.php:2
+msgctxt "Pattern title"
+msgid "Latest articles section"
+msgstr ""
+
+#: patterns/posts-list.php:2
+msgctxt "Pattern title"
+msgid "List of posts"
+msgstr ""
+
+#: patterns/projects-2-col.php:2
+msgctxt "Pattern title"
+msgid "List of projects, 2 columns"
+msgstr ""
+
+#: patterns/page-home-personal.php:2
+msgctxt "Pattern title"
+msgid "Personal home page"
+msgstr ""
+
+#: patterns/template-home-personal.php:2
+msgctxt "Pattern title"
+msgid "Personal home template"
+msgstr ""
+
+#: patterns/hidden-page-header-portfolio.php:2
+msgctxt "Pattern title"
+msgid "Portfolio Page Header"
+msgstr ""
+
+#: patterns/section-process.php:2
+msgctxt "Pattern title"
+msgid "Process section"
+msgstr ""
+
+#: patterns/section-recent-projects.php:2
+msgctxt "Pattern title"
+msgid "Recent projects section"
+msgstr ""
+
+#: patterns/section-services.php:2
+msgctxt "Pattern title"
+msgid "Services section"
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgctxt "Placeholder for search field"
+msgid "Search..."
+msgstr ""
+
+#: functions.php:390
+msgid "Portfolio"
+msgstr ""
+
+#: patterns/hidden-page-header-portfolio.php:16
+msgctxt "Portfolio page header text"
+msgid ""
+"My passion lies in crafting interfaces that not only work seamlessly, but "
+"also evoke emotions and establish a strong bond between your brand and your "
+"users."
+msgstr ""
+
+#: patterns/hidden-page-header-portfolio.php:12
+msgctxt "Portfolio page header title"
+msgid "Portfolio"
+msgstr ""
+
+#: patterns/section-process.php:41
+msgctxt "Process section item text"
+msgid ""
+"After conducting thorough research, we will explore various strategic design "
+"solutions. We will present multiple routes and further develop the selected "
+"option. This will involve creating wireframes, animations and interactions."
+msgstr ""
+
+#: patterns/section-process.php:29
+msgctxt "Process section item text"
+msgid ""
+"By identifying and embracing your brand's core values, we will create an "
+"authentic and consistent brand image that will resonate with consumers and "
+"set you apart from competitors. Let these values guide your organization to "
+"success."
+msgstr ""
+
+#: patterns/section-process.php:53
+msgctxt "Process section item text"
+msgid ""
+"This is the phase were we craft a launch communication plan that outlines "
+"key messages and personalizes them for the specific audience. Keeping the "
+"future of the brand in mind by following brand guidelines."
+msgstr ""
+
+#: patterns/section-process.php:25
+msgctxt "Process section item title"
+msgid "01. Strategy"
+msgstr ""
+
+#: patterns/section-process.php:37
+msgctxt "Process section item title"
+msgid "02. Execution"
+msgstr ""
+
+#: patterns/section-process.php:49
+msgctxt "Process section item title"
+msgid "03. Launch"
+msgstr ""
+
+#: patterns/section-process.php:15
+msgctxt "Process section title"
+msgid "Working Process"
+msgstr ""
+
+#: patterns/section-recent-projects.php:45
+msgctxt "Recent projects section button text"
+msgid "Browse All"
+msgstr ""
+
+#: patterns/section-recent-projects.php:15
+msgctxt "Recent projects section title"
+msgid "Recent Projects"
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgid "Search"
+msgstr ""
+
+#: patterns/section-services.php:25
+msgctxt "Services section item number"
+msgid "01"
+msgstr ""
+
+#: patterns/section-services.php:41
+msgctxt "Services section item number"
+msgid "02"
+msgstr ""
+
+#: patterns/section-services.php:57
+msgctxt "Services section item number"
+msgid "03"
+msgstr ""
+
+#: patterns/section-services.php:33
+msgctxt "Services section item text"
+msgid ""
+"Elevate your brand with custom web designs that captivate your audience and "
+"deliver the perfect user experience."
+msgstr ""
+
+#: patterns/section-services.php:49
+msgctxt "Services section item text"
+msgid ""
+"I craft tailor-made websites that flawlessly blend with your design, from "
+"start to finish."
+msgstr ""
+
+#: patterns/section-services.php:65
+msgctxt "Services section item text"
+msgid ""
+"Unleash the full potential of your website with a winning combination of "
+"brand identity and functional features."
+msgstr ""
+
+#: patterns/section-services.php:29
+msgctxt "Services section item title"
+msgid "Design"
+msgstr ""
+
+#: patterns/section-services.php:45
+msgctxt "Services section item title"
+msgid "Development"
+msgstr ""
+
+#: patterns/section-services.php:61
+msgctxt "Services section item title"
+msgid "The full package"
+msgstr ""
+
+#: patterns/section-services.php:15
+msgctxt "Services section title"
+msgid "I can help you with..."
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "7"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Loading Screen"
+msgstr ""
+
+#: inc/theme.php:91
+msgctxt "Theme admin page button text"
+msgid "Live Preview"
+msgstr ""
+
+#: inc/theme.php:89
+msgctxt "Theme admin page button text"
+msgid "Theme Homepage"
+msgstr ""
+
+#: inc/theme.php:84
+msgctxt "Theme admin page text"
+msgid ""
+"Featuring a fully customizable layout, Avi allows you to effortlessly create "
+"a stunning portfolio that truly reflects your unique style and brand. Choose "
+"from a variety of pre-designed templates or create your own from scratch - "
+"the possibilities are endless!"
+msgstr ""
+
+#: inc/theme.php:80
+msgctxt "Theme admin page text"
+msgid ""
+"Introducing Avi - the ultimate WordPress theme for digital designers looking "
+"to showcase their portfolio in style!"
+msgstr ""
+
+#: inc/theme.php:86
+msgctxt "Theme admin page text"
+msgid ""
+"So why settle for a generic portfolio when you can have Avi - the ultimate "
+"WordPress theme for digital designers. Get ready to showcase your talent and "
+"elevate your brand with Avi. Try it now!"
+msgstr ""
+
+#: inc/theme.php:82
+msgctxt "Theme admin page text"
+msgid ""
+"With its sleek and modern design, Avi is the perfect platform to showcase "
+"your creative work and impress potential clients. Whether you're a graphic "
+"designer, web developer, or photographer, Avi has got you covered."
+msgstr ""
+
+#: inc/theme.php:78
+msgctxt "Theme admin page title"
+msgid "Avi Theme"
+msgstr ""
+
+#: inc/theme-required-plugins.php:28
+msgid "UK Portfolio"
+msgstr ""
+
+#. Author of the theme
+msgid "Uladzimir Kulesh"
+msgstr ""
