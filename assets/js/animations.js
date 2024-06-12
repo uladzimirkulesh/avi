@@ -8,17 +8,17 @@
 
 	// First page load
 	function firstPageLoad() {
-		$( ".loading-screen" ).animate( { top: '-100%' }, 600 );
+		$( ".loading-screen" ).animate( { top: '-100vh' }, 600 );
 	}
 
 	// Page load
 	function pageLoad() {
-		$( ".loading-screen" ).animate( { top: '-100%' }, 600 );
+		$( ".loading-screen" ).animate( { top: '-100vh' }, 600 );
 	}
 
 	// Page leave
 	function pageLeave( linkTarget ) {
-		$( ".loading-screen" ).animate( { top: '100%' }, 0 ).animate( { top: '0' }, 600, function() {
+		$( ".loading-screen" ).animate( { top: '100vh' }, 0 ).animate( { top: '0' }, 600, function() {
 			window.location = linkTarget;
 		} );
 	}
