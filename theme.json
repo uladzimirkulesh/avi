@@ -338,12 +338,6 @@
 					"fontSize": "var(--wp--preset--font-size--xxxxxx-large)",
 					"lineHeight": "1.125"
 				},
-				"spacing": {
-					"margin": {
-						"top": "0",
-						"bottom": "0"
-					}
-				},
 				"elements": {
 					"link": {
 						"color": {

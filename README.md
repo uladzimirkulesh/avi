@@ -47,8 +47,11 @@ browser-sync start --proxy "localhost:8888/wordpress" --files "**/*" --browser "
 
 ## Changelog
 
-**1.0.0**
-   * Released: June 12, 2024
+**1.0.1 - June 17, 2024**
+* FIXED: Spacings.
+
+**1.0.0 - June 12, 2024**
+* Release
 
 ## Copyright
 
