@@ -47,8 +47,9 @@ browser-sync start --proxy "localhost:8888/wordpress" --files "**/*" --browser "
 
 ## Changelog
 
-**1.0.1 - June 17, 2024**
+**1.0.1 - July 8, 2024**
 * FIXED: Spacings.
+* FIXED: Home link in hidden-404.php.
 
 **1.0.0 - June 12, 2024**
 * Release

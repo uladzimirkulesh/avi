@@ -20,7 +20,7 @@
 	<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
 		<!-- wp:button -->
 		<div class="wp-block-button">
-			<a class="wp-block-button__link wp-element-button" href="http://localhost:8888/wordpress/" rel="home"><?php esc_html_e( 'Back to Home', 'avi' ); ?></a>
+			<a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html_e( 'Back to Home', 'avi' ); ?></a>
 		</div>
 		<!-- /wp:button -->
 	</div>
