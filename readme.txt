@@ -2,9 +2,9 @@
 
 Contributors: Uladzimir Kulesh
 Requires at least: 6.1
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,12 +27,16 @@ So why settle for a generic portfolio when you can have Avi - the ultimate WordP
 
 == Changelog ==
 
+= 1.0.2 - July 18, 2024 =
+* FIXED: theme.json, line 3 - added compatibility with WordPress 6.6.
+* FIXED: functions.php: lines 112-113 added.
+
 = 1.0.1 - July 8, 2024 =
 * FIXED: Spacings.
 * FIXED: Home link in hidden-404.php.
 
 = 1.0.0 - June 12, 2024 =
-* Release
+* Release.
 
 == Copyright ==
 

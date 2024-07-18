@@ -109,6 +109,9 @@ if ( ! function_exists( 'avi_scripts' ) ) :
 			)
 		);
 
+		// Enqueue global scripts.
+		wp_enqueue_script( 'avi-global' );
+
 		// Register animations scripts.
 		wp_register_script(
 			'avi-animations',

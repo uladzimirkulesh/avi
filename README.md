@@ -29,17 +29,17 @@ So why settle for a generic portfolio when you can have Avi - the ultimate WordP
 
 ### Font-sizes (320-1600px):
 
-* Small:			14px		   - Small Text
-* Normal:		16px		   - Text
-* Medium:		18px		   - H6, Blockquote
-* Large:			21px		   - H5, Pullquote
-* X Large:		24px		   - H4
+* Small:		14px		- Small Text
+* Normal:		16px		- Text
+* Medium:		18px		- H6, Blockquote
+* Large:		21px		- H5, Pullquote
+* X Large:		24px		- H4
 * 2X Large:		28-30px		- H3
 * 3X Large:		32-36px		- H2
 * 4X Large:		36-48px		- H1
 * 5X Large:		42-72px		- Large Headings
 * 6X Large:		42-96px		- Post Headings
-* 7X Large:		60-256px	   - Huge Headings
+* 7X Large:		60-256px	- Huge Headings
 
 ## Terminal
 
@@ -47,12 +47,16 @@ browser-sync start --proxy "localhost:8888/wordpress" --files "**/*" --browser "
 
 ## Changelog
 
+**1.0.2 - July 18, 2024**
+* FIXED: theme.json, line 3 - added compatibility with WordPress 6.6.
+* FIXED: functions.php: lines 112-113 added.
+
 **1.0.1 - July 8, 2024**
 * FIXED: Spacings.
 * FIXED: Home link in hidden-404.php.
 
 **1.0.0 - June 12, 2024**
-* Release
+* Release.
 
 ## Copyright
 
