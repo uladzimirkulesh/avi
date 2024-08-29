@@ -4,8 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Avi\n"
 "Report-Msgid-Bugs-To: https://uladzimirkulesh.com\n"
-"POT-Creation-Date: 2024-06-12 17:29+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2024-08-29 08:35+0000\n"
 "Last-Translator: Uladzimir Kulesh <hello@uladzimirkulesh.com>\n"
 "Language-Team: Uladzimir Kulesh <hello@uladzimirkulesh.com>\n"
 "Language: English\n"
@@ -46,7 +45,7 @@ msgstr ""
 msgid "Avi"
 msgstr ""
 
-#: functions.php:389
+#: functions.php:392
 msgid "Avi Theme"
 msgstr ""
 
@@ -556,7 +555,7 @@ msgctxt "Message to convey that a webpage could not be found"
 msgid "The page you are looking for cannot be found."
 msgstr ""
 
-#: functions.php:391
+#: functions.php:394
 msgid "Pages"
 msgstr ""
 
@@ -685,7 +684,7 @@ msgctxt "Placeholder for search field"
 msgid "Search..."
 msgstr ""
 
-#: functions.php:390
+#: functions.php:393
 msgid "Portfolio"
 msgstr ""
 
