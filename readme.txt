@@ -27,6 +27,9 @@ So why settle for a generic portfolio when you can have Avi - the ultimate WordP
 
 == Changelog ==
 
+= 1.0.3 - August 29, 2024 =
+* DELETED: accessibility-ready tag.
+
 = 1.0.2 - July 18, 2024 =
 * FIXED: theme.json, line 3 - added compatibility with WordPress 6.6.
 * FIXED: functions.php: lines 112-113 added.

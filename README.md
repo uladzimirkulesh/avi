@@ -47,6 +47,9 @@ browser-sync start --proxy "localhost:8888/wordpress" --files "**/*" --browser "
 
 ## Changelog
 
+**1.0.3 - August 29, 2024**
+* DELETED: accessibility-ready tag.
+
 **1.0.2 - July 18, 2024**
 * FIXED: theme.json, line 3 - added compatibility with WordPress 6.6.
 * FIXED: functions.php: lines 112-113 added.
